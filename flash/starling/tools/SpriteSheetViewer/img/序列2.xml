@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!--  -->
+<TextureAtlas imagePath="序列2.png">
+    <SubTexture name="元件 30001" x="2" y="2" width="124" height="259" frameX="-212" frameY="-290" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30002" x="128" y="2" width="128" height="263" frameX="-206" frameY="-289" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30003" x="258" y="2" width="132" height="261" frameX="-202" frameY="-289" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30004" x="392" y="2" width="138" height="259" frameX="-197" frameY="-290" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30005" x="532" y="2" width="172" height="215" frameX="-196" frameY="-337" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30006" x="706" y="2" width="92" height="265" frameX="-236" frameY="-247" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30007" x="800" y="2" width="146" height="331" frameX="-190" frameY="-173" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30008" x="2" y="335" width="186" height="313" frameX="-167" frameY="-113" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30009" x="190" y="335" width="230" height="297" frameX="-144" frameY="-66" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30010" x="422" y="335" width="260" height="287" frameX="-127" frameY="-16" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30011" x="684" y="335" width="182" height="245" frameX="-178" frameY="-36" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30012" x="868" y="335" width="132" height="205" frameX="-229" frameY="-62" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30013" x="2" y="650" width="138" height="205" frameX="-248" frameY="-90" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30014" x="868" y="335" width="132" height="205" frameX="-229" frameY="-62" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30015" x="684" y="335" width="182" height="245" frameX="-178" frameY="-36" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30016" x="422" y="335" width="260" height="287" frameX="-130" frameY="-1" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30017" x="142" y="650" width="280" height="301" frameX="-86" frameY="-38" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30018" x="424" y="650" width="374" height="317" frameX="-38" frameY="-75" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30019" x="2" y="969" width="452" height="333" frameX="0" frameY="-107" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30020" x="456" y="969" width="406" height="329" frameX="-37" frameY="-147" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30021" x="864" y="969" width="148" height="305" frameX="-185" frameY="-206" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30022" x="2" y="1304" width="106" height="279" frameX="-214" frameY="-257" frameWidth="454" frameHeight="553"/>
+    <SubTexture name="元件 30023" x="532" y="2" width="172" height="215" frameX="-196" frameY="-337" frameWidth="454" frameHeight="553"/>
+</TextureAtlas>
