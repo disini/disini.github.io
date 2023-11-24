@@ -1,0 +1,9 @@
+https://raw.iqiq.io/liu673cn/box/main/m.json
+https://agit.ai/hu/hcr/raw/branch/master/haoh.txt
+https://cdn.jsdelivr.net/gh/vpei/Free-TVUrl-Merge@main/out/tvbox.txt
+https://agit.ai/hu/hcr/raw/commit/7412d685dc62f3a8996a0f0c7f8070d4395fe908/%e5%a4%a7%e8%81%aa%e6%98%8e.txt
+ 
+https://agit.ai/nbwzlyd/xiaopingguo/raw/branch/master/xiaopingguo/xiaopingguo.json
+https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json
+
+以上接口为某蚁论坛网友分享，目前测试是可以正常读取并使用的，如果后期接口读取失败，则意味着作者已经不再维护，自行删除了。

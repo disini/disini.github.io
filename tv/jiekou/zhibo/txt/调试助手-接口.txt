@@ -1,0 +1,11 @@
+接口1：http://52bsj.vip:81/api/v3/file/get/83755/ygbb.json?sign=FBi4GjvM3YtR6kHqrAARbLH-RUkB30oE3DcHxygS3tE%3D%3A0
+
+接口2：http://52bsj.vip:81/api/v3/file/get/34794/BB.json?sign=M4A-1rOnPBkrTM8p9QAdxZc9D_duCoSFfSxtGGeq9go%3D%3A0
+
+接口3：http://52bsj.vip:81/api/v3/file/get/40481/2.txt?sign=3xBvuB0ywQUzwA5PN6mbDq9_Ip6G4tM6jiv07beUM_c%3D%3A0
+
+接口4：http://52bsj.vip:81/api/v3/file/get/40482/3.txt?sign=Pwj7ADl32TZyoMshAvLE2dRAecx8-Hu3BOudh-1kEZ4%3D%3A0
+
+接口5：https://agit.ai/kvymin/TV/raw/branch/master/xbiu.json
+
+五花肉接口：http://8.210.220.114/biu/18.txt

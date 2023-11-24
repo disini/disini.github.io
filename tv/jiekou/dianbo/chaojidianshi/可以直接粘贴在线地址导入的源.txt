@@ -1,0 +1,8 @@
+可以直接网络导入的源：
+
+央视/卫视/港台高清/4K专区超清直播源（推荐）
+https://pastebin.com/raw/ybSuEMjs
+
+其它直播源（经常更换链接地址不长久）
+http://homenet6.gitee.io/list/list.m3u
+https://myernestlu.github.io/zby.txt
