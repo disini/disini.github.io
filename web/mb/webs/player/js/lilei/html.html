@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>moivebook player</title>
+
+
+<body>
+     
+    <div id="player" />
+    <div id="videoDiv" />
+</body>
+
+<script>
+    var core = "player";
+//    var source = "http://127.0.0.1:81/zhuihunji-32-730.mp4";
+//    var source = "./video/xblyjy.mp4";
+//    var source = "./video/jbx.mp4";
+    var source = "http://localhost:63342/build/video/jbx.mp4";
+    var moivebook = new Object();
+    moivebook.player = "play";
+    moivebook.videoE = "videoDiv";
+    moivebook.time = 0;
+    moivebook.cpid = 9;
+    moivebook.mid = "7028156";
+    moivebook.showVideoE = "000";
+    moivebook.videoETop = 0;
+    moivebook.videoELeft = 0;
+    moivebook.videoEWidth = 0;
+    moivebook.videoEheight = 0;
+</script> 
+<script src="js/videoE.js"></script> 
+<script src="js/main.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</html>

@@ -1,0 +1,399 @@
+#player {
+    position: relative;
+    width: 100%;
+    height: 100%;
+};
+#myplayer {
+    position: absolute;   
+    float: left;
+    left: 0px;
+    width: 100%; 
+    height: 100%; 
+    object-fit:fill;
+}
+#control {
+    position: absolute; 
+    float: left;
+    left: 0px;
+    bottom: 5px;
+    z-index: 2;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+.toggleControl {
+    position: relative;
+    height: 32px;
+    width: 50px;
+    cursor:pointer;
+    float: left;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.toggleHerf{
+    color: #ababab;
+}
+.toggleHerf:hover{
+    color: #6cc900;
+}
+.playButton {
+    display: block;
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #ababab;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -5px;
+}
+.playButton:hover {
+    display: block;
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #6cc900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -5px;
+}
+.pasueButton {
+    user-select: none;
+    font-style:normal;
+    letter-spacing: 3px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:-11px 0 0 -7px;
+}
+.forwardControl {
+    position: relative;
+    float: left;
+    width: 25px;
+    height: 20px;
+    cursor:pointer;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.forwardArrow{
+    border: 8px dashed transparent;
+    border-left: 13px solid #ababab;
+    display: block;
+    position: relative;
+    top: 9px;
+    left: 0px;
+    float: left;
+}
+.forwardArrowHover{
+    border: 8px dashed transparent;
+    border-left: 13px solid #6cc900;
+    display: block;
+    position: relative;
+    top: 9px;
+    left: 0px;
+}
+.forwardLine{
+    position: relative;
+    float: left;
+    width: 2px;
+    height: 15px;
+    top: 10px;
+    left: -10px;
+    border-right: 2px solid #ababab;
+}
+.forwardLineHover{
+    position: relative;
+    float: left;
+    width: 1px;
+    height: 15px;
+    left: 12px;
+    top:-6px;
+    border-right: 2px solid #6cc900;
+}
+#timeDuration{
+    position: relative;
+    float: left;
+    margin-top: 11px;
+    margin-left: 20px;
+}
+#currentTime{
+    color: #f4f4f4;
+    user-select: none;
+}
+#durationTime{
+    color: #89898a;
+    user-select: none;
+}
+.controlRight
+{
+    float: right;
+    width: 25%;
+    height: 32px;
+    margin-top: 1px;
+}
+.controlRight ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 32px;
+    float: right;
+}
+.controlRight ul li
+{
+    list-style: none;
+    margin-left: 5px;
+    padding: 0;
+    width: 50px;
+    height: 32px;
+    float: left;
+    margin-top: 8px;
+    
+}
+.streamText
+{
+    font-size: 13px;
+    cursor:pointer;
+    color: #ababab;
+    margin-top: 10px;
+}
+.streamText:hover
+{
+    cursor:pointer;
+    color: #6cc900;
+}
+.liHerf
+{
+    width: 43px;
+    height: 32px;
+    display: block;
+    cursor:pointer;
+    margin-top: 5px;
+}
+.screenFull
+{
+    width: 30px;
+    height: 32px;
+    display: block;
+    background: url(./../resource/icon-all.png) no-repeat -32px -29px;
+    
+}
+.screenFull:hover
+{
+    width: 30px;
+    height: 32px;
+    display: block;
+    background: url(./../resource/icon-all.png) no-repeat 2px -29px;
+}
+.fullScreen
+{
+    width: 30px;
+    height: 32px;
+    display: block;
+    background: url(./../resource/icon-all.png) no-repeat -63px -29px;
+}
+.fullScreen:hover
+{
+    width: 30px;
+    height: 32px;
+    display: block;
+    background: url(./../resource/icon-all.png) no-repeat -92px -29px;
+}
+.webFull
+{
+    width: 25px;
+    height: 20px;
+    display: block;
+    background: url(./../resource/icon-all.png) no-repeat 0px -81px;
+}
+.webFull:hover
+{
+    width: 25px;
+    height: 20px;
+    display: block;
+    background: url(./../resource/icon-all.png) no-repeat -25px -81px;
+}
+.voiceMax
+{
+    width: 25px;
+    height: 20px;
+    display: block;
+    background: url(./../resource/icon-all.png) no-repeat -73px 0px;
+}
+.voiceMax:hover
+{
+    width: 25px;
+    height: 18px;
+    display: block;
+    background: url(./../resource/icon-all.png) no-repeat -65px -62px;
+}
+#clartyText
+{
+    user-select: none;
+}
+.clarty
+{
+    background: rgba(26,26,26,.8);
+    position: absolute;
+    width: 118px;
+    border: 1px solid #1c1c1c;
+    z-index: 100;
+    margin-left: -47px;
+    margin-top: -183px;
+    display: none;
+}
+.clartyblack
+{
+    background: rgba(26,26,26,.8);
+    position: absolute;
+    width: 118px;
+    border: 1px solid #1c1c1c;
+    z-index: 100;
+    margin-left: -47px;
+    margin-top: -183px;
+    display: block;
+}
+.clartyA
+{
+    text-align: center;
+    color: #f4f4f4;
+    font-size: 13px;
+    width: 118px;
+    height: 30px;
+    cursor:pointer;
+    display: block;
+}
+.clartyA:hover
+{
+    color: #6cc900;
+}
+.voiceBox
+{
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -157px;
+    z-index: 100;
+    width: 34px;
+    height: 108px;
+    background: rgba(26,26,26,.8);
+    border: 1px solid #1c1c1c;
+    display: none;
+    
+}
+.voiceIcon
+{
+    height: 80px;
+    width: 2px;
+    background: #5e5755;
+    position: absolute;
+    left: 4px;
+    margin-top: 15px;
+    margin-left: 12px;
+}
+.voiceTrack
+{
+    height: 60px;
+    width: 2px;
+    background: #6cc900;
+    position: absolute;
+    bottom: 0px;
+}
+.voiceSilder
+{
+    background-color: #fff;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+   
+    cursor: pointer;
+    margin-left: -4px;
+}
+#processBox
+{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    cursor: pointer;
+    transition: height .2s;
+    bottom: 40px;
+    z-index: 5;
+    background: rgba(120, 120, 120, 0.4);
+}
+#processBox:hover
+{
+    height: 16px;
+    
+}
+#processLoad
+{
+    background: #828282;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: height .2s;
+}
+#processLoad:hover
+{
+    height: 16px;
+    
+}
+#processPlay
+{
+    background-image: -webkit-linear-gradient(left,#57a900,#97ff00 80%,#dee2da);
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: height .2s;
+   
+}
+#processPlay:hover
+{
+    height: 16px;
+    
+}
+#processButton
+{
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    width: 16px;
+    opacity: 0;
+    top: 0px;
+    box-shadow: -2px 1px 10px #888888;
+}
+#processButton:hover
+{
+    opacity: 1;
+    
+}
+#processOver{
+    background: #ff0000;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: height .2s;
+    width: 100%;
+}
+#processOver:hover{
+    height: 16px;
+   
+}
+#videoDiv
+{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    z-index: 99;
+}

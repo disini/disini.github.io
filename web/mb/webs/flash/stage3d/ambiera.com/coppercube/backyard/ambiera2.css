@@ -1,0 +1,827 @@
+/* Ambiera Template 
+   copyright 2002-2015 Nikolaus Gebhardt, Ambiera */
+
+body
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0; 
+	font: 9pt Arial, Helvetica, sans-serif;
+	color: #222222;
+	background: #EEEEEE;
+}
+
+td.topmenu
+{
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #bbbbbb;
+}
+
+td.topmenu table
+{
+	font-size: 11pt;
+	height: 70px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #ffffff url(ambiera7.png) left no-repeat;  
+}
+
+#rootcenterhelper
+{
+	/* aligns everything into the center, for cross browser compatibility */
+}
+
+#rootsizehelper
+{
+	min-width: 600px;
+	max-width: 960px;
+	width: 95%;	
+}
+
+
+table
+{
+	font-size: 13px; /* old (no avg users have bigger screens): 9pt; */ /*  an IE6 bug */
+	text-align: left; 
+	background-color: #eeeeee; 
+	border-right: 1px solid #bbbbbb;
+	border-bottom: 1px solid #bbbbbb;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+}
+
+table.maintable
+{
+	width: 100%;
+	border: none;
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	background-color: #999999; /* ie6 sets the color of the border to this to,
+								its a bug, so we set all background cell colors */
+}
+
+td.shadowleft
+{
+	width: 15px;
+	min-width: 15px;
+	margin: 0;
+	padding: 0;
+	background: #eeeeee url(shadowleft.gif) left;   
+	/*border-right: 1px solid #999999;*/
+}
+
+td.shadowright
+{
+	width: 15px;
+	min-width: 15px;
+	margin: 0;
+	padding: 0;
+	background: #eeeeee url(shadowright.gif) left;  
+	/*border-left: 1px solid #999999;	*/
+}
+
+
+img.leftTitle
+{
+	float: left;
+}
+
+img.rightTitle
+{
+	float: right;
+}
+
+img.checkimg
+{
+	
+}
+
+td.leftmenu
+{
+	vertical-align: top;
+	background: #ffffff url(menubackground.png);
+	width: 130px;
+}
+
+
+#menu
+{
+	width: 130px;
+	overflow:hidden; 
+	border-right: 1px solid #dddddd;
+	padding-left: 5px;
+	padding-top: 15px;
+}
+
+
+#menu a
+{
+	background: #dddddd url(backbutton.png) left top no-repeat; 
+	color: #444444;
+	display: block;
+	min-height: 20px;
+	margin-top: 3px;
+	margin-left: 3px;
+	text-decoration: none; 
+	padding-top: 3px;
+	padding-bottom: 0px;
+	overflow:hidden;
+}
+
+#menu a:hover
+{
+	color: #222222;	
+	background: #cccccc url(backbuttonhover.png) left top no-repeat;
+}
+
+#submenu
+{
+	background: none;
+	width: 100%;
+	line-height: 1.5em;
+	padding-top: 0px;
+	margin-left: 2px;
+}
+
+#submenu a
+{
+	display: block;
+	height: 20px;
+	color: #444444;
+	background: url(black_arrow.gif) left no-repeat;
+	padding-left: 10px; /* distance from arrow */
+	margin-left: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-bottom: 1px solid #cccccc;
+}
+
+#submenu a:hover
+{
+	background: url(black_arrow.gif) left no-repeat #dddddd;
+	color: #000000;
+}
+
+#submenul2
+{
+	background: none;
+	width: 100%;
+	line-height: 1.5em;
+	padding-top: 0px;
+	margin-left: 20px;
+}
+
+#submenul2 a
+{
+	display: block;
+	height: 20px;
+	color: #222222;
+	background: none;
+	padding-left: 0px; /* distance from arrow */
+	margin-left: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-bottom: 1px solid #cccccc;
+	font-weight: normal;
+}
+
+#submenul2 a:hover
+{
+	background: none left no-repeat #dddddd;
+	color: #222222;
+}
+
+#submenu a.highlighted
+{
+	background: none left no-repeat #dddddd;
+	font-weight: bold;
+}
+
+td.contentarea
+{
+	line-height: 1.6;
+	padding-left: 15px;
+	padding-right: 15px;
+	vertical-align: top;
+	background-color: #ffffff;
+}
+
+
+td.contentarea img
+{
+	margin: 10px 5px 5px 5px;
+}
+
+td.contentarea img.intext
+{
+	margin: 0 0 0 0;
+}
+
+td.contentarea h1
+{
+	text-align: left; 
+	margin: 0px 0px 10px 0px;
+	padding: 20px 0px 10px 0px;
+	font-size: 14pt;
+	color: #222222;
+}
+
+td.contentarea h2
+{
+	text-align: left; 
+	margin: 0px 0px 10px 0px;
+	padding: 20px 0px 0px 0px;
+	font-size: 12pt;
+	color: #222222;
+}
+
+td.contentarea h3
+{
+	text-align: left; 
+	margin: 0px 0px 10px 0px;
+	padding: 20px 0px 0px 0px;
+	font-size: 10pt;
+	color: #000000;
+}
+
+td.contentarea h3.forum
+{
+	text-align: left; 
+	margin: 0px 0px 0px 0px;
+	padding: 20px 0px 0px 0px;
+	font-size: 10pt;
+	color: #000000;
+}
+
+
+td.contentarea p
+{
+	margin: 5px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color: #333333;
+}
+
+td.adsarea
+{
+	vertical-align: top;
+	padding-top: 15px;
+	background-color: #ffffff;
+}
+
+td.bottombar
+{
+	height: 0px;
+	border-bottom: 1px solid #999999;
+	background-color: #ffffff;
+}
+
+/* ----------------------------- */
+
+#nobackground 
+{
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+td.contentarea a img
+{
+	border: 0;
+}
+
+td.contentarea a
+{
+	background: url(black_arrow.gif) left no-repeat;   
+	padding-left: 7px;
+	margin-left: 3px;
+	text-decoration: underline; 
+	color: #333D49; 
+	font-weight: normal;
+}
+
+td.contentarea a:hover
+{
+	color: #FF8C00;
+	text-decoration: underline;
+}
+
+#datum
+{
+	padding: 0px 0px 10px 0px;  
+	margin: 0px 0px 0px 0px; 
+	border-top: 1px solid #cccccc;
+	font-size: 7pt;
+	color: #808080;
+}
+
+#datum a
+{
+	margin-left: 10px;
+}
+
+table.layouting
+{
+	border: 0px;
+	background: none;
+}
+
+table.invisible
+{
+	background-color: #ffffff; 
+	padding: 0px 0px 0px 0px;
+	margin: 20px 0px 0px 0px;
+	border: 0px solid #000000;
+}
+
+table.informwborder
+{
+	width: 80%;
+	text-align: left;
+	background-color: #ffffff; 
+	border: 1px solid #98A7B2;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+td.tableimage
+{
+	vertical-align: top;
+	text-align: center;
+	padding: 10px 4px 4px 4px;
+}
+
+td.tablecontent
+{
+	vertical-align: top;
+	text-align: left;
+	border: 1px solid #444444;
+	padding: 4px 4px 4px 4px;
+}
+
+td.tablecontentnbleft
+{
+	vertical-align: top;
+	text-align: left;
+	border-left: 1px solid #444444;
+	padding: 4px 4px 4px 4px;
+	border-top: 1px solid #444444;
+	border-bottom: 1px solid #444444;
+}
+
+td.tablecontentnbmiddle
+{
+	vertical-align: middle;
+	text-align: left;
+	padding: 4px 4px 4px 4px;
+	border-top: 1px solid #444444;
+	border-bottom: 1px solid #444444;
+}
+
+td.tablecontentnbright
+{
+	vertical-align: middle;
+	text-align: left;
+	border-right: 1px solid #444444;
+	padding: 4px 4px 4px 4px;
+	border-top: 1px solid #444444;
+	border-bottom: 1px solid #444444;
+}
+
+tr.buycontentrow
+{
+	border-left: 1px solid #444444;
+	background-color: #dddddd; 
+}
+
+tr.buycontentrow2
+{
+}
+
+td.buycontentrowtd
+{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+td.toptablecontent
+{
+	vertical-align: top;
+}
+
+td.hcenteredtablecontent
+{
+	vertical-align: top;
+	text-align: center;
+	border: 1px solid #444444;
+	padding: 4px 4px 4px 4px;
+}
+
+td.centeredtablecontent
+{
+	vertical-align: middle;
+	text-align: center;
+	border: 0px; 
+}
+
+td.itemhighlightcell
+{
+	vertical-align: top;
+	text-align: left;
+	border: 0px; 
+	padding: 0;
+	padding-left:  10px;
+	padding-right: 10px;
+}
+
+table.frontpageitemtable
+{
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border: 1px solid #cccccc;
+}
+
+td.itemhighlightcell h2
+{
+	padding-top: 0px;
+}
+
+td.contentarea a.productheading
+{
+	font-weight: bold;
+	display:block;
+	font-size: 12pt;
+	text-decoration: none;
+	margin-bottom: 10px;
+	color: #000000;
+	background: none;
+	padding-left: 0;
+}
+
+td.contentarea a.productheading:hover
+{
+	color: #999999;
+}
+
+td.tablecaption
+{
+	text-align: left;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #777777;
+	/*background: #777777 url(topcaptionverlauf.png);*/
+	padding-left: 5px;
+}
+
+pre
+{
+	line-height: 1;
+	font-size: 12px;
+	background-color: #eeeeee;
+	padding: 5px 5px 5px 5px;
+	border: solid 1px #aaaaaa;
+}
+
+.leftalign
+{
+	text-align: left;
+}
+
+table.inform
+{
+	background-color: #eeeeee;
+	border: 1px solid #AAAAAA;
+	padding: 0px 10px 10px 10px;
+}
+
+table.inform h2
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+input.styledinput
+{
+	background-color:#FCFCFC; 
+	border:1px solid #98A7B2; 
+	font: 9pt Arial, Helvetica, sans-serif;
+	width:250px; 
+	height:15px; 
+}
+
+textarea 
+{ 
+	background-color:#FCFCFC; 
+	border:1px solid #98A7B2;
+	width:250px; 
+}
+
+select
+{ 
+	background-color:#FCFCFC; 
+	border:1px solid #98A7B2;
+	width:250px; 
+}
+
+table.invisibleinform
+{
+	background-color: #eeeeee;
+	padding: 0px 0px 0px 0px;
+	margin: 20px 0px 0px 0px;
+	border: 0px solid #000000;
+}
+
+
+#buylink 
+{
+	background: #cccccc; 
+	border: 1px solid #7F7469;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+}
+
+#buylink:hover
+{
+	background: #dddddd;
+	text-decoration:none;
+	border: 1px solid #7F7469;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+}
+
+table.forumcontentbox
+{
+	border: 1px solid #999999;
+	background: #ffffff url(menubackground.png);
+	color: #000000;
+	text-align: left; 
+	font: 9pt Arial, Helvetica, sans-serif; /* unncessary, but an ie6 bug */
+}
+
+table.forumcontentbox td table
+{
+	font: 9pt Arial, Helvetica, sans-serif; /* unncessary, but an ie6 bug */
+}
+
+table.forumcontentbox td
+{
+	padding: 5px 5px 5px 5px;
+}
+
+tr.forumboxheader
+{
+	color: #000000;
+	height: 23px;
+	font-weight: bold;
+}
+
+tr.forumboxheader td
+{
+	padding: 0px 0px 0px 5px;
+	border: 1px solid #aaaaaa;
+	background-color: #EAEAEA;
+}
+
+textarea.forumtextfield
+{
+	width: 400px; 
+	height:300px; 
+	font: 9pt Arial, Helvetica, sans-serif;
+	border:1px solid #aaaaaa; 
+}
+
+input.forumsubjectfield
+{
+	width: 300px; 
+	height:17px; 
+	font: 9pt Arial, Helvetica, sans-serif;
+	border:1px solid #aaaaaa; 
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+select.forumformselect
+{ 
+	background-color:#FCFCFC; 
+	border:1px solid #98A7B2;
+	width: 180px; 
+}
+
+input.forumnameinput
+{
+	width: 180px; 
+	height:17px; 
+	font: 9pt Arial, Helvetica, sans-serif;
+	border:1px solid #aaaaaa; 
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+a.forumbold
+{
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+div.errortext
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+
+input.forumquicklogin
+{
+	background-color: #FCFCFC; 
+	border: 1px solid #aaaaaa; 
+	width: 90px; 
+	height:17px; 
+	font: 8pt Arial, Helvetica, sans-serif;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+div.quote
+{
+	border: 1px solid #777777;
+	padding: 5px;
+	margin: 5px;
+	font-style: italic;
+ 	background: #EEEEEE;
+}
+
+td.forumauthor
+{
+	border-top: 1px solid #aaaaaa;
+	vertical-align: top;
+	width: 100px;
+}
+
+td.forumtext
+{
+	border: 1px solid #aaaaaa;
+	background: #ffffff url(menubackground.png);
+}
+
+
+hr
+{
+	border: 0px solid #aaaaaa;
+	background-color:#aaaaaa;
+	height:1px;
+}
+
+#middlemenu
+{
+	background: #000000 url(backmiddlemenu.png);
+	border-bottom: 1px solid #444444;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	color: #000000;
+	font-size:10pt;
+}
+
+#middlemenu a
+{
+	color: #000000;
+	padding-left: 10px;
+	text-decoration:none;
+}
+
+#middlemenu a:hover
+{
+	color: #555555;
+	text-decoration:underline;
+}
+
+/* ------------------------------------------------------------
+   Company Menu
+*/
+
+#companymenu
+{
+	position:relative;
+	font: 11pt Arial, Helvetica, sans-serif;
+}
+
+#companymenu_pane 
+{ 
+	/*margin-top: 20px; */
+	background-color: #E6E6E6; 
+	border: 1px solid #dddddd; 
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+	box-shadow: 2px 2px 10px #888;
+	z-index:1000;
+	padding-left: 0px;
+}
+
+#companymenu a
+{
+	text-decoration:none;
+}
+
+.companymenu_main
+{
+	 padding: 5px 5px 5px 5px; 
+	 color: #555555;
+}
+
+.companymenu_main:hover
+{
+	color: #ffffff; 
+	background-color: #999999; 
+} 
+
+#companymenu_pane div
+{ 
+	padding: 2px 20px 2px 20px; 
+}
+
+#companymenu_entry
+{
+	color: #555555; 
+}
+
+#companymenu_entry:hover
+{ 
+	color:#FFFFFF !important; 
+	background-color: #888888; 
+}
+
+#companymenu_readonly
+{ 
+	color:#aaaaaa;
+}
+
+#companymenu_pane_hr 	
+{ 
+	background-color: #646464; 
+	height: 1px; 
+	border: none; 
+}
+
+/* ------------------------------------------------------------
+   Product Menu
+*/
+
+#productmenu
+{
+	position:relative;
+	font: 11pt Arial, Helvetica, sans-serif;
+	height: 30px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #cccccc;
+	padding-top: 10px; 
+	padding-left: 20px;
+}
+
+#productmenu a
+{
+	text-decoration:none;
+}
+
+.productmenu_main
+{
+	padding: 5px 5px 5px 5px;
+	color: #555555;
+	height: 50px;
+}
+
+.productmenu_main:hover
+{
+	color: #ffffff; 
+	background-color: #999999; 
+} 
+
+#productmenu .highlighted
+{
+	color: #888888; 
+	background-color: #dddddd; 
+}
+
+/* --------------------------------------------- */
+
+div.downloadbuttonarea a.downloadbutton 
+{
+	padding: 10px 10px 10px 10px;
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 4px;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #555555;
+	background: #599EFF;
+	font-size: 12pt;
+	background-image: linear-gradient(to top, #3F72B5, #599EFF);
+	white-space: nowrap;	
+}
+
+div.downloadbuttonarea:hover a.downloadbutton 
+{
+	background: #4FACFF;
+}

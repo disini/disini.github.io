@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="LiuSheng" />
+    <meta name="viewport" content="width=device-with"/>
+    <title>First shader test part1</title>
+    <style>
+       /* html. body {
+            padding: 0;
+            margin:0;
+        }*/
+        #container {
+            background: #000;
+            width: 800px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+	</div>
+	</body>
+
+    <!--<script src="libs/three.min.js"></script>-->
+    <!-- Shaders -->
+    <script type="x-shader/x-vertex" id="vertexshader">
+        // switch on high precision floats
+        #ifdef GL_ES
+        precision highp float;
+        #endif
+
+        void main()
+        {
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+    </script>
+    <script type="x-shader/x-fragment" id="fragmentshader">
+        #ifdef GL_ES
+        precision highp float;
+        #endif
+
+        void main()
+        {
+            gl_FragColor = vec4(1.0, 0.0, 1.0, 1.0);
+        }
+    </script>
+
+    <!-- End Shaders -->
+<script src="libs/jquery.min.js"></script>
+<script src="libs/Three.js"></script>
+<!--//<script type="text/javascript">
+        // set the scene size
+    </script>-->
+    <script  type="text/javascript">
+        // Set the scene size.
+//        const WIDTH = window.innerWidth;
+//        const HEIGHT=window.innerHeight;
+        var passedTime = 0;
+        var WIDTH = 800,
+            HEIGHT = 600;
+
+        // Set some camera attributes.
+        const VIEW_ANGLE = 45;
+        const ASPECT = WIDTH / HEIGHT;
+        const NEAR = 0.1;
+        const FAR = 10000;
+
+        // Get the DOM element to attach to
+//        const container = document.querySelector("#container");
+
+        var $container = $('#container');
+
+
+        // Create a WebGl renderer, camera
+        // and a scene
+        var renderer = new THREE.WebGLRenderer();
+//        var camera = new THREE.PerspectiveCamera(
+        var camera = new THREE.Camera(VIEW_ANGLE,
+            ASPECT,
+            NEAR,
+            FAR        );
+
+        var scene = new THREE.Scene();
+
+
+		camera.position.z = 300;
+        // Add the camera to the scene.
+//        scene.add(camera);
+
+        // Start the renderer.
+        renderer.setSize(WIDTH, HEIGHT);
+
+        // Attach the renderer-supplied
+        // DOM element.
+//      $container.appendChild(renderer.domElement);
+        //container.appendChild(renderer.domElement);
+		//container.append(renderer.domElement);
+		$container.append(renderer.domElement);
+
+        // create a point light
+//        const pointLight1 = new  THREE.PointLight(0xFFFFFF);
+        const pointLight1 = new  THREE.PointLight(0x0000FF);// green
+        const pointLight2 = new  THREE.PointLight(0x00FF00);// Blue
+        const pointLight3 = new  THREE.PointLight(0xFF0000);// Red
+
+        // Set its position 绿
+        pointLight1.position.x = 60;// 右后方
+        pointLight1.position.y = 50;
+        pointLight1.position.z = 130;
+
+
+
+        // Set its position 蓝
+        pointLight2.position.x = -60;// 左后方
+        pointLight2.position.y = 50;
+        pointLight2.position.z = 130;
+
+
+        // Set its position 红
+        pointLight3.position.x = 0;// 下方
+        pointLight3.position.y = -50;
+        pointLight3.position.z = 30;
+
+        // add to the scene
+        scene.addChild(pointLight1);
+        scene.addChild(pointLight2);
+        scene.addChild(pointLight3);
+
+        var vShader = $('#vertexshader');
+        var fShader = $('#fragmentshader');
+
+       // var shaderMaterial = new THREE.ShaderMaterial(
+	    var shaderMaterial = new THREE.MeshShaderMaterial(
+		
+            {
+                vertexShader: vShader.text(),
+                fragmentShader: fShader.text()
+            }
+        );
+
+        const sphereMaterial = new THREE.MeshLambertMaterial(
+            {
+//                color: 0x00CC00
+                color: 0xFFFFFF
+            }
+        )
+
+        // Set up the sphere vars
+        const RADIUS = 50;
+        const SEGMENTS = 16;
+        const RINGS = 16;
+
+        const orbitRadius = 80;
+
+        // Create a new mesh with sphere geometry - we will cover the sphereMaterial next!
+        const sphere = new THREE.Mesh(
+//            new THREE.SphereGeometry(
+            new THREE.Sphere(
+                RADIUS,
+                SEGMENTS,
+                RINGS
+            ), sphereMaterial
+//            ), shaderMaterial
+        );
+
+        // Move the Sphere back in Z so we can see it.
+        //sphere.position.z = -300;
+
+        scene.addChild(sphere);
+
+//        scene.addChild(sphere);
+        function update() {
+            // Draw!
+//            passedTime++;
+            passedTime += 0.01;
+//            camera.position.z += 0.2;
+//            camera.rotation.y += 2;
+//            camera.position.y += 2;
+//            camera.position.y = 100 * Math.sin(passedTime);
+
+//            sphere.position.y = orbitRadius * Math.sin(passedTime);
+//            sphere.position.x = orbitRadius * Math.cos(passedTime);
+//            sphere.position.z = orbitRadius * Math.cos(passedTime);
+
+
+// 绕y轴逆时针旋转
+            sphere.position.x = orbitRadius * Math.sin(passedTime);
+            sphere.position.z = orbitRadius * Math.cos(passedTime);
+//            sphere.material.color = 65536*(1 + Math.sin(passedTime));
+//            sphere.material.color.setRGB(255 *(1 + Math.sin(passedTime)), 255 * (1 + Math.cos(passedTime)), 255 * Math.random());
+//            sphere.material.color.setRGB()
+//            pointLight1.color.setRGB(255*())
+
+            renderer.render(scene, camera);
+
+
+            // Schedule the next frame.
+            requestAnimationFrame(update);
+
+        }
+
+        requestAnimationFrame(update);
+//        renderer.render(scene, camera);
+
+    </script>
+
+</html>

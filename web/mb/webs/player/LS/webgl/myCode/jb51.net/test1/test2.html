@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>立方体</title>
+    <!--<script src="http://sqimg.qq.com/qq_product_operations/mma/javanli_test/lib/three.min.js"></script>-->
+ <script type="text/javascript" src="three.min.js"></script>
+<style type="text/css">
+html, body{
+	margin:0;
+	padding:0;
+}
+
+#three_canvas {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+</style>
+</head>
+
+<body>
+<canvas id="three_canvas"></canvas>
+<script>
+	var renderer, camera, scene, light, object;
+	var width, height;
+	function initRenderer() {
+		width = document.getElementById("three_canvas").clientWidth;
+		height = document.getElementById("three_canvas").clientHeight;
+		
+		renderer = new THREE.WebGLRenderer({
+			// 将canvas绑定到renderer
+			canvas: document.getElementById("three_canvas")
+		});
+		renderer.setSize(width, height);// 将渲染的大小设为与canvas相同
+		renderer.setClearColor(0xFFFFFF, 1.0);// 设置默认颜色与透明度
+	}
+	
+	
+
+
+	function initCamera() {
+	    // 简单的正交投影相机， 正对着视口的中心
+        camera = new THREE.OrthographicCamera(width/-2, width/2, height/2, height/-2, 1, 1000);
+        // 设置相机的位置
+        camera.position.x = 0;
+        camera.position.y = 0;
+        camera.position.z = 260;// 立方体对角线长度为519.61，一半是259.8
+
+        // 设置相机的上方向
+        camera.up.x = 0;
+        camera.up.y = 1;
+        camera.up.z = 0;
+
+        // 设置相机聚焦的位置
+        camera.lookAt({
+            x:0,
+            y:0,
+            z:0
+        });
+}
+	function initScene() {
+		scene = new THREE.Scene();	
+	}
+        function initObject() {
+            //创建一个边长为300的立方体
+            var geometry = new THREE.CubeGeometry(300, 300, 300);
+            object = new THREE.Mesh(geometry, new THREE.MeshNormalMaterial());// 法向材质
+            scene.add(object);
+        }
+
+        function render() {
+            requestAnimationFrame(render);
+            object.rotation.x += 0.015;
+            object.rotation.y += 0.015;
+
+            renderer.render(scene, camera);
+        }
+
+        function threeStart() {
+            initRenderer();
+            initCamera();
+            initScene();
+            initObject();
+            render();
+        }
+
+        window.onload = threeStart();
+
+
+</script>
+</body>
+
+</html>
+

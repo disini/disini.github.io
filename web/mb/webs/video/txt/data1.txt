@@ -1,0 +1,108 @@
+{
+    "videos": [
+        {
+            "adid": "838f32fff51ada7d6ce1ef029237f4f8",
+            "exposure_time": "741.8",
+            "second": "5.64",
+            "start": "741.8",
+            "url": "http://file.zhiruyi.com/192168001057/video/2017-02-13/new000000004C1hdKMb1486974749589.zry",
+            "product_id": "1285",
+            "standardPicUrl": "http://www.zhiruyi.com/htdocs/uploads/template/demo_img/2017020919170473461.jpg",
+            "standardPicTime": "740.6",
+            "click_url": "http://testapi.zhiruyi.cn/api/click?adid=838f32fff51ada7d6ce1ef029237f4f8",
+            "pv": "http://api.zhiruyi.com/api/pvCallback?uuid=1486976495023368221&adid=838f32fff51ada7d6ce1ef029237f4f8&out_id=6550898_761000&platform=9&material_id=6948&template_id=0106126&template_ext_id=0106126730&work_order_id=4521&member_id=00000210&product_id=1285&drama_id=256",
+            "times": "12分21秒",
+            "mouse_over_icon": "NULL",
+            "click_type": 1,
+            "floatinglayer": null,
+            "zone": [
+                {
+                    "exposure_time": "741.8",
+                    "second": "5.64",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                }
+            ]
+        },
+        {
+            "adid": "606f8a0bf4beeb2ce140c9fac36913a6",
+            "exposure_time": "833.36",
+            "second": "19.76",
+            "start": "833.36",
+            "url": "http://file.zhiruyi.com/192168001057/video/2017-02-13/new00000000ub2Ox6WN1486974749563.zry",
+            "product_id": "1286",
+            "standardPicUrl": "http://www.zhiruyi.com/htdocs/uploads/template/demo_img/2017020919150996476.jpg",
+            "standardPicTime": "829.8",
+            "click_url": "http://testapi.zhiruyi.cn/api/click?adid=606f8a0bf4beeb2ce140c9fac36913a6",
+            "pv": "http://api.zhiruyi.com/api/pvCallback?uuid=1486976495023368221&adid=606f8a0bf4beeb2ce140c9fac36913a6&out_id=6550898_761000&platform=9&material_id=6948&template_id=0106226&template_ext_id=0106226730&work_order_id=4521&member_id=00000210&product_id=1286&drama_id=256",
+            "times": "13分53秒",
+            "mouse_over_icon": "NULL",
+            "click_type": 1,
+            "floatinglayer": null,
+            "zone": [
+                {
+                    "exposure_time": "833.36",
+                    "second": "19.76",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                }
+            ]
+        },
+        {
+            "adid": "f4a128bdb3156b0a293bb70235875893",
+            "exposure_time": "2417.48 ",
+            "second": "13.32",
+            "start": "2417.48",
+            "url": "http://file.zhiruyi.com/192168001057/video/2017-02-13/new000000005fuKheST1486974749513.zry",
+            "product_id": "1285",
+            "standardPicUrl": "http://www.zhiruyi.com/htdocs/uploads/template/demo_img/2017020919215780721.jpg",
+            "standardPicTime": "2410.56",
+            "click_url": "http://testapi.zhiruyi.cn/api/click?adid=f4a128bdb3156b0a293bb70235875893",
+            "pv": "http://api.zhiruyi.com/api/pvCallback?uuid=1486976495023368221&adid=f4a128bdb3156b0a293bb70235875893&out_id=6550898_761000&platform=9&material_id=6948&template_id=0106326&template_ext_id=0106326730&work_order_id=4521&member_id=00000210&product_id=1285&drama_id=256",
+            "times": "40分17秒",
+            "mouse_over_icon": "NULL",
+            "click_type": 1,
+            "floatinglayer": null,
+            "zone": [
+                {
+                    "exposure_time": "2417.48",
+                    "second": "13.32",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                }
+            ]
+        },
+        {
+            "adid": "cf9fa9f380f86a5df8ae40fcfebac9b1",
+            "exposure_time": "4937.28 ",
+            "second": "3.56",
+            "start": "4937.28",
+            "url": "http://file.zhiruyi.com/192168001057/video/2017-02-13/new000000009krPwt6v1486974749540.zry",
+            "product_id": "1285",
+            "standardPicUrl": "http://www.zhiruyi.com/htdocs/uploads/template/demo_img/2017020919190557695.jpg",
+            "standardPicTime": "4935.08",
+            "click_url": "http://testapi.zhiruyi.cn/api/click?adid=cf9fa9f380f86a5df8ae40fcfebac9b1",
+            "pv": "http://api.zhiruyi.com/api/pvCallback?uuid=1486976495023368221&adid=cf9fa9f380f86a5df8ae40fcfebac9b1&out_id=6550898_761000&platform=9&material_id=6948&template_id=0106526&template_ext_id=0106526730&work_order_id=4521&member_id=00000210&product_id=1285&drama_id=256",
+            "times": "1时22分17秒",
+            "mouse_over_icon": "NULL",
+            "click_type": 1,
+            "floatinglayer": null,
+            "zone": [
+                {
+                    "exposure_time": "4937.28",
+                    "second": "3.56",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                }
+            ]
+        }
+    ]
+}

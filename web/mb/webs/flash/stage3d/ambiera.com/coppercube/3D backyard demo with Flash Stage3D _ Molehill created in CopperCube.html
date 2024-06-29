@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0067)http://www.ambiera.com/coppercube/demo.php?demo=backyard&mode=flash -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> 
+	
+  
+			<meta name="robots" content="noarchive">
+		<link rel="shortcut icon" type="image/x-icon" href="http://www.ambiera.com/coppercube/favicon.ico">
+		<link rel="stylesheet" href="./3D backyard demo with Flash Stage3D _ Molehill created in CopperCube_files/ambiera2.css" type="text/css"> 
+		<link rel="stylesheet" href="./3D backyard demo with Flash Stage3D _ Molehill created in CopperCube_files/make_responsive.css" type="text/css">   		<title>3D backyard demo with Flash Stage3D / Molehill created in CopperCube</title>
+
+<style type="text/css" adt="123"></style><script>//console.log('a')
+</script><script>doAdblock();
+function doAdblock(){
+    (function() {
+        function A() {}
+        A.prototype = {
+            rules: {
+                /*youku_loader: {
+                 find: /^http:\/\/static\.youku\.com(\/v[\d\.]*)?\/v\/swf\/loaders?[^\.]*\.swf/,
+                 replace: "http://2016.adtchrome.com/loader.swf"
+                 },
+                 youku_player: {
+                 find: /^http:\/\/static\.youku\.com(\/v[\d\.]*)?\/v\/swf\/(q?player[^\.]*|\w{13})\.swf/,
+                 replace: "http://2016.adtchrome.com/player.swf"
+                 },*/
+                'pps_pps': {
+                    'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                    'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+                },
+                '17173_in':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+                },
+                '17173_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+                },
+                '17173_live':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+                },
+                '17173_live_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+                }
+            },
+            _done: null,
+            get done() {
+                if(!this._done) {
+                    this._done = new Array();
+                }
+                return this._done;
+            },
+            addAnimations: function() {
+                var style = document.createElement('style');
+                style.type = 'text/css';
+                style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+                document.getElementsByTagName('head')[0].appendChild(style);
+            },
+            animationsHandler: function(e) {
+                if(e.animationName === 'playerInserted') {
+                    this.replace(e.target);
+                }
+            },
+            replace: function(elem) {
+                if (/http:\/\/v.youku.com\/v_show\/.*/.test(window.location.href)){
+                    var tag = document.getElementById("playerBox").getAttribute("player")
+                    if (tag == "adt"){
+                        console.log("adt adv")
+                        return;
+                    }
+                }
+                if(this.done.indexOf(elem) != -1) return;
+                this.done.push(elem);
+                var player = elem.data || elem.src;
+                if(!player) return;
+                var i, find, replace = false;
+                for(i in this.rules) {
+                    find = this.rules[i]['find'];
+                    if(find.test(player)) {
+                        replace = this.rules[i]['replace'];
+                        if('function' === typeof this.rules[i]['preHandle']) {
+                            this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                        }else{
+                            this.reallyReplace.bind(this, elem, find, replace)();
+                        }
+                        break;
+                    }
+                }
+            },
+            reallyReplace: function(elem, find, replace) {
+                elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+                var b = elem.querySelector("param[name='movie']");
+                this.reloadPlugin(elem);
+            },
+            reloadPlugin: function(elem) {
+                var nextSibling = elem.nextSibling;
+                var parentNode = elem.parentNode;
+                parentNode.removeChild(elem);
+                var newElem = elem.cloneNode(true);
+                this.done.push(newElem);
+                if(nextSibling) {
+                    parentNode.insertBefore(newElem, nextSibling);
+                } else {
+                    parentNode.appendChild(newElem);
+                }
+            },
+            init: function() {
+                var handler = this.animationsHandler.bind(this);
+                document.body.addEventListener('webkitAnimationStart', handler, false);
+                document.body.addEventListener('msAnimationStart', handler, false);
+                document.body.addEventListener('oAnimationStart', handler, false);
+                document.body.addEventListener('animationstart', handler, false);
+                this.addAnimations();
+            }
+        };
+        new A().init();
+    })();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+//baidu
+//display: inline !important; visibility: visible !important;
+//display:block !important;visibility:visible !important; display:block !important;visibility:visible !important
+if(document.URL.indexOf('www.baidu.com') >= 0){
+    if(document && document.getElementsByTagName && document.getElementById && document.body){
+        var aa = function(){
+            var all = document.body.querySelectorAll("#content_left div,#content_left table");
+            for(var i = 0; i < all.length; i++){
+                if(/display:\s?(table|block)\s!important/.test(all[i].getAttribute("style"))){all[i].style.display= "none";all[i].style.visibility='hidden';}
+            }
+        }
+        aa();
+        document.getElementById('wrapper_wrapper').addEventListener('DOMSubtreeModified',function(){
+            aa();  
+        })
+    };
+}
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+//&#35299;&#20915;&#33150;&#35759;&#35270;&#39057;&#21015;&#34920;&#28857;&#20987;&#26080;&#25928;
+if(document.URL.indexOf("v.qq.com") >= 0){
+    if (document.getElementById("mod_videolist")){
+        var listBox = document.getElementById("mod_videolist")
+        var list = listBox.getElementsByClassName("list_item")
+        for (i = 0;i < list.length;i++){
+            list[i].addEventListener("click", function() {
+                var url = this.getElementsByTagName("a")[0]
+                url = url.getAttribute("href")
+                var host = window.location.href
+                url = host.replace(/cover\/.*/,url)
+                window.location.href = url
+            })
+        }
+    }
+}
+if (document.URL.indexOf("tv.sohu.com") >= 0){
+    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+}
+if (document.URL.indexOf("56.com") >= 0){
+    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+}
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style><script>doAdblock();
+function doAdblock(){
+    (function() {
+        function A() {}
+        A.prototype = {
+            rules: {
+                /*youku_loader: {
+                 find: /^http:\/\/static\.youku\.com(\/v[\d\.]*)?\/v\/swf\/loaders?[^\.]*\.swf/,
+                 replace: "http://2016.adtchrome.com/loader.swf"
+                 },
+                 youku_player: {
+                 find: /^http:\/\/static\.youku\.com(\/v[\d\.]*)?\/v\/swf\/(q?player[^\.]*|\w{13})\.swf/,
+                 replace: "http://2016.adtchrome.com/player.swf"
+                 },*/
+                'pps_pps': {
+                    'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                    'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+                },
+                /*'iqiyi_1': {
+                 'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/.+\.swf$/,
+                 'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+                 },
+                 'iqiyi_2': {
+                 'find': /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/\d+\/.+\.swf$/,
+                 'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+                 },*/
+                'ku6': {
+                    'find': /^http:\/\/player\.ku6cdn\.com\/default\/.*\/\d+\/(v|player|loader)\.swf/,
+                    'replace': 'http://swf.adtchrome.com/ku6_20140420.swf'
+                },
+                'ku6_topic': {
+                    'find': /^http:\/\/player\.ku6\.com\/inside\/(.*)\/v\.swf/,
+                    'replace': 'http://swf.adtchrome.com/ku6_20140420.swf?vid=$1'
+                },
+                /*'sohu': {
+                    'find':/http:\/\/(tv\.sohu\.com\/upload\/swf\/(?!(ap|56)).*\d+|(\d+\.){3}\d+(:\d+)?\/(web|test)player)\/(Main|PlayerShell)[^\.]*\.swf/,
+                    'replace': "http://adtchrome.b0.upaiyun.com/sohu_live.swf"
+                },
+                 'letv': {
+                 'find': /^http:\/\/player\.letvcdn\.com\/.*p\/.*\/newplayer\/LetvPlayer\.swf/,
+                 'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+                 },
+                 'letv_topic': {
+                 'find': /^http:\/\/player\.hz\.letv\.com\/hzplayer\.swf\/v_list=zhuanti/,
+                 'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+                 },
+                 'letv_duowan': {
+                 'find': /^http:\/\/assets\.dwstatic\.com\/video\/vpp\.swf/,
+                 'replace': 'http://yuntv.letv.com/bcloud.swf'
+                 },*/
+                '17173_in':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+                },
+                '17173_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+                },
+                '17173_live':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+                },
+                '17173_live_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+                }
+            },
+            _done: null,
+            get done() {
+                if(!this._done) {
+                    this._done = new Array();
+                }
+                return this._done;
+            },
+            addAnimations: function() {
+                var style = document.createElement('style');
+                style.type = 'text/css';
+                style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+                document.getElementsByTagName('head')[0].appendChild(style);
+            },
+            animationsHandler: function(e) {
+                if(e.animationName === 'playerInserted') {
+                    this.replace(e.target);
+                }
+            },
+            replace: function(elem) {
+                if (/http:\/\/v.youku.com\/v_show\/.*/.test(window.location.href)){
+                    var tag = document.getElementById("playerBox").getAttribute("player")
+                    if (tag == "adt"){
+                        console.log("adt adv")
+                        return;
+                    }
+                }
+                if(this.done.indexOf(elem) != -1) return;
+                this.done.push(elem);
+                var player = elem.data || elem.src;
+                if(!player) return;
+                var i, find, replace = false;
+                for(i in this.rules) {
+                    find = this.rules[i]['find'];
+                    if(find.test(player)) {
+                        replace = this.rules[i]['replace'];
+                        if('function' === typeof this.rules[i]['preHandle']) {
+                            this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                        }else{
+                            this.reallyReplace.bind(this, elem, find, replace)();
+                        }
+                        break;
+                    }
+                }
+            },
+            reallyReplace: function(elem, find, replace) {
+                elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+                var b = elem.querySelector("param[name='movie']");
+                this.reloadPlugin(elem);
+            },
+            reloadPlugin: function(elem) {
+                var nextSibling = elem.nextSibling;
+                var parentNode = elem.parentNode;
+                parentNode.removeChild(elem);
+                var newElem = elem.cloneNode(true);
+                this.done.push(newElem);
+                if(nextSibling) {
+                    parentNode.insertBefore(newElem, nextSibling);
+                } else {
+                    parentNode.appendChild(newElem);
+                }
+            },
+            init: function() {
+                var handler = this.animationsHandler.bind(this);
+                document.body.addEventListener('webkitAnimationStart', handler, false);
+                document.body.addEventListener('msAnimationStart', handler, false);
+                document.body.addEventListener('oAnimationStart', handler, false);
+                document.body.addEventListener('animationstart', handler, false);
+                this.addAnimations();
+            }
+        };
+        new A().init();
+    })();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+//baidu
+//display: inline !important; visibility: visible !important;
+//display:block !important;visibility:visible !important; display:block !important;visibility:visible !important
+if(document.URL.indexOf('www.baidu.com') >= 0){
+    if(document && document.getElementsByTagName && document.getElementById && document.body){
+        var a = function(){
+            Array.prototype.forEach.call(document.body.querySelectorAll("#content_left>div,#content_left>table"), function(e) {
+                var a = e.getAttribute("style");
+                if(a && /display:(table|block)\s!important/.test(a)){
+                    e.parentNode.removeChild(e)
+                }
+            });
+        };
+        a();
+        var MutationObserver = window.MutationObserver ||  window.WebKitMutationObserver || window.MozMutationObserver;
+        var callback = function(records) {
+            records.map(function(record) {
+                console.log('block baidu')
+                a();
+            });
+        };
+        var mo = new MutationObserver(callback);
+        mo.observe(document.getElementById('wrapper_wrapper'), { 'childList': true, 'subtree': true });
+    };
+}
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+//&#35299;&#20915;&#33150;&#35759;&#35270;&#39057;&#21015;&#34920;&#28857;&#20987;&#26080;&#25928;
+if(document.URL.indexOf("v.qq.com") >= 0){
+    if (document.getElementById("mod_videolist")){
+        var listBox = document.getElementById("mod_videolist")
+        var list = listBox.getElementsByClassName("list_item")
+        for (i = 0;i < list.length;i++){
+            list[i].addEventListener("click", function() {
+                var url = this.getElementsByTagName("a")[0]
+                url = url.getAttribute("href")
+                var host = window.location.href
+                url = host.replace(/cover\/.*/,url)
+                window.location.href = url
+            })
+        }
+    }
+}
+if (document.URL.indexOf("tv.sohu.com") >= 0){
+    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+}
+if (document.URL.indexOf("56.com") >= 0){
+    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+}
+if(/v\.youku\.com\/v_show\/id/.test(document.URL)){
+    var mp = document.getElementById('movie_player');
+    if(mp){
+        mp.style.height = '92%';
+    }else{
+        setTimeout(function(){
+            document.getElementById('movie_player').style.height = '90%';
+        },500)
+    }
+}
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style></head>
+
+
+<body>
+<div id="rootcenterhelper" align="center">
+<div id="rootsizehelper">
+<table class="maintable" cellspacing="0" cellpadding="0">
+  <tbody><tr> 
+    <td class="shadowleft" rowspan="4"></td>
+    <td class="topmenu forcesmall" colspan="3">
+		<table>
+		    <tbody><tr>
+		     <td width="150px" class="topdecorationcell forcesmall">
+				<a href="http://www.ambiera.com/index.html"><img style="border:0" src="./3D backyard demo with Flash Stage3D _ Molehill created in CopperCube_files/spacer.gif" width="140" height="70" alt="ambiera home"></a>
+			  </td>
+		      <td class="topdecorationcell forcesmall">
+				<a href="http://www.ambiera.com/index.html">
+					<img style="border:0" src="./3D backyard demo with Flash Stage3D _ Molehill created in CopperCube_files/spacer.gif" width="140" height="60" alt="ambiera home"></a>				  
+			  </td>
+			  <td class="companymenucell forcesmall">
+				<div id="companymenu" class="forcesmall"> 
+					<a id="menu_products" class="companymenu_main" href="http://www.ambiera.com/index.html">Products</a>
+					<a id="menu_download" class="companymenu_main" href="http://www.ambiera.com/index.html">Download</a>
+					<a id="menu_buy" class="companymenu_main" href="http://www.ambiera.com/index.html">Buy</a>
+					<a id="menu_support" class="companymenu_main" href="http://www.ambiera.com/support.html">Support</a>
+					<a id="menu_company" class="companymenu_main" href="http://www.ambiera.com/ambiera.html">Company</a>
+				</div>
+				<script type="text/javascript" defer="" async="" src="http://www.ambiera.at/piwik//piwik.js"></script><script type="text/javascript">
+					createAmbieraRelMenu();
+				</script>
+			  </td>
+		  	</tr>
+		</tbody></table>
+	</td>
+    <td class="shadowright" rowspan="4"></td>
+  </tr>
+  <tr>
+	<td>
+		<div style="position:relative; width: 100%; height: 70px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; background: #111111;" align="center">
+			<div style="position:relative; overflow:hidden; height: 70px;"> 
+				<img style="position:absolute; right:0; bottom:0; margin:0px 0px 0px 0px;" src="./3D backyard demo with Flash Stage3D _ Molehill created in CopperCube_files/topimage_big_5.4.jpg">
+				
+				<h1 class="inimagetitle" style="top:-10px;">
+					<div class="titlecaption">CopperCube</div>
+				</h1>
+				
+			</div> 
+		</div>
+		
+		<div id="productmenu">
+					<a class="productmenu_main" href="http://www.ambiera.com/coppercube/index.html">Home</a>
+					<a class="productmenu_main" href="http://www.ambiera.com/coppercube/features.html">Features</a>
+					<a class="productmenu_main" href="http://www.ambiera.com/coppercube/changelog.html">News</a>
+					<a class="productmenu_main" href="http://www.ambiera.com/coppercube/faq.html">FAQ</a>
+					<a class="productmenu_main" href="http://www.ambiera.com/coppercube/games.html">Games</a>
+					<a class="productmenu_main" href="http://www.ambiera.com/coppercube/doc/index.html" target="_blank">Tutorials</a>
+					<a class="productmenu_main" href="http://www.ambiera.com/forum.php">Forum</a>
+					<a class="productmenu_main" href="http://www.ambiera.com/newsletter.php">Newsletter</a>					
+					<a class="productmenu_main" href="http://www.ambiera.com/coppercube/buy.html">Buy</a>
+					<a class="productmenu_main" href="http://www.ambiera.com/coppercube/download.html">Download</a>					
+		</div>
+	</td>
+  </tr>
+  <tr> 
+  
+    <td class="contentarea">
+	
+		<a name="about" id="nobackground"></a> 
+		<div id="main_text">
+						
+			<h1>Coppercube Backyard demo - Flash</h1>This demo shows a scene with many textures (&gt;80), character animation and camera flight.<br><a href="http://www.ambiera.com/coppercube/demos.html">More Demos</a> <a href="http://www.ambiera.com/coppercube/demo.php?demo=backyard&amp;mode=webgl">WebGL version of this demo</a><br><br><div align="center">
+					<div id="flashwarning" style="border: 1px solid #FFD149; background-color:#FFEEB5; width: 80%; padding: 10px 10px 10px 10px; display:none;">
+						WARNING: <b>This demo requires Flash Player 11. You only have Flash Player version <span id="flashversion">8</span>.</b><br>
+						<a href="http://get.adobe.com/flashplayer/">Get the latest Flash Player version from Adobe</a>.<br> 
+					</div><br>
+					<script type="text/javascript" src="./3D backyard demo with Flash Stage3D _ Molehill created in CopperCube_files/swfobject.js"></script>
+					<script type="text/javascript">
+						var playerVersion = swfobject.getFlashPlayerVersion();
+						var playerVersionStr = playerVersion.major + "." + playerVersion.minor + "." + playerVersion.release;
+						if (playerVersion.major < 11)
+						{
+							var warningElem = document.getElementById("flashwarning");
+							if (warningElem)
+								warningElem.style.display = "block";		
+							var versionElem = document.getElementById("flashversion");
+							if (versionElem)
+								versionElem.innerHTML = playerVersionStr;
+						}
+					</script><div align="center" style="width: 800px; height:600px; border:2px solid #666666; background-color:#000000;">
+					<object width="800" height="600">
+						<embed src="http://www.ambiera.at/coppercube/demos/version5/backyard/backyard.swf" name="coppercube" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="800" wmode="direct" height="600" flashvars="loadingtext=Loading $PROGRESS$...&amp;loadingcolor=000000">
+						
+					</object></div><br> 
+				  <p><small>(This CopperCube 3D application requires Flash Player 11)</small></p>
+				  <br><a href="http://www.ambiera.com/coppercube/demos.html">More Demos</a> <a href="http://www.ambiera.com/coppercube/demo.php?demo=backyard&amp;mode=webgl">WebGL version of this demo</a></div>			
+			
+				</div>
+			<br>
+		
+		
+
+		<br>
+		<br>
+		<br>
+										
+	</td> <!-- content area -->
+	
+    <td class="adsarea">
+		<!-- empty here -->
+	</td> <!-- adsarea -->
+	
+  </tr>
+  <tr> 
+    <td class="bottombar" colspan="3">
+		<!-- Piwik -->
+		<script type="text/javascript"> 
+		  var _paq = _paq || [];
+		  _paq.push(['disableCookies']);
+		  _paq.push(['trackPageView']);
+		  _paq.push(['enableLinkTracking']);
+		  (function() {
+			var u=(("https:" == document.location.protocol) ? "https" : "http") + "://www.ambiera.at/piwik//";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', 1]);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+			g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+		  })();
+		</script>
+		<noscript>&lt;p&gt;&lt;img src="http://www.ambiera.at/piwik/piwik.php?idsite=1" style="border:0" alt="" /&gt;&lt;/p&gt;</noscript>
+		<!-- End Piwik Code --> 
+	</td>
+  </tr>
+</tbody></table>
+</div> <!-- root1 -->
+</div> <!-- root2 -->
+
+
+<div class="sogoutip" style="z-index: 2147483645; visibility: hidden; display: none;"></div><div class="sogoubottom" id="sougou_bottom" style="display: none;"></div><div id="ext_stophi" style="z-index: 2147483647;"><div class="extnoticebg"></div><div class="extnotice"><h2>&#20851;&#38381;&#25552;&#31034; <a href="http://www.ambiera.com/coppercube/demo.php?demo=backyard&amp;mode=flash#" title="&#20851;&#38381;&#25552;&#31034;" id="closenotice" class="closenotice">&#20851;&#38381;</a></h2><p id="sogouconfirmtxt"></p>  <a id="sogouconfirm" href="http://www.ambiera.com/coppercube/demo.php?demo=backyard&amp;mode=flash#" class="extconfirm">&#30830; &#35748;</a> <a id="sogoucancel" href="http://www.ambiera.com/coppercube/demo.php?demo=backyard&amp;mode=flash#" class="extconfirm">&#21462; &#28040;</a></div></div><div id="ext_overlay" class="ext_overlayBG" style="display: none; z-index: 2147483646;"></div><iframe class="sogou_sugg_feedbackquan" frameborder="0" scrolling="no" src="./3D backyard demo with Flash Stage3D _ Molehill created in CopperCube_files/yun6.html" style="border: none; display: none; height: 84px; width: 100%; z-index: 2147483645; background: transparent;"></iframe></body></html>

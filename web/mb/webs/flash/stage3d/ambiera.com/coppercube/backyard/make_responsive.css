@@ -1,0 +1,231 @@
+table.features td
+{
+	width:33%;
+	text-align: center;			
+	vertical-align:top;
+}
+
+table.features h2
+{
+	text-align: center;
+	color: #555555;
+}
+
+div.featureentrycontainer
+{
+	text-align: center;
+}
+
+div.featureentry
+{
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	vertical-align: top;
+	margin: 50px 10px 0px 10px;
+	overflow: hidden;
+	min-width: 200px;
+}
+
+div.featureentrymain
+{
+	/*
+	background-color: #eeeeee;
+	border: 1px solid #AAAAAA;
+	border-radius: 15px;
+	padding-bottom: 10px; */
+}
+
+div.featuretextcontainer
+{
+	min-height: 80px;
+}
+ 
+div.featureentry h2
+{
+	text-align: center;
+	color: #222222;
+}
+ 
+img.featureimage
+ {
+	border: 1px solid #CCCCCC;
+	width: 80%;
+	max-width: 640px;
+}
+ 
+@media screen and (max-width: 780px) 
+{
+	div.featureentry { width: 70%;	 }
+}
+ 
+.inimagetitle 
+{
+	color: #ffffff;
+	position:absolute;
+	left:20px; 
+	top:110px;
+	font: 42px Arial, Helvetica, sans-serif; 
+	font-weight: normal; 
+	text-shadow: 1px 1px 2px #333333;
+	text-align: left;
+}
+
+.titlecaption { display:inline; font-weight: bold; }
+.subtitlecaption { display:inline; font-size: 70%; }
+
+@media screen and (max-width: 750px) 
+{
+	.subtitlecaption { font-size: 50%;	 }
+}
+
+@media screen and (max-width: 430px) 
+{
+	.subtitlecaption { font-size: 30%;	 }
+}
+
+@media screen and (max-width: 590px) 
+{
+	.inimagetitle { font-size: 36px; }
+	
+	#rootsizehelper { width: 100%; }
+	td.shadowleft {	display: none; }
+	td.shadowright {	display: none; }
+}
+
+/* rules for keeping top ambiera menu small on all screensizes if 'forcesmall' is applied */
+td.topmenu.forcesmall table { height: 20px; }
+td.topdecorationcell.forcesmall { display: none; }
+td.topmenu.forcesmall table { background-position: -200px; background-image: none; background-color: #C5C5C5; border:none;}
+td.companymenucell.forcesmall { text-align:right; }
+
+
+/* make top ambiera menu small on small screensizes */
+ @media screen and (max-width: 720px) 
+ {
+	td.topmenu table { height: 20px; }
+	td.topdecorationcell { display: none; }
+	td.topmenu table { background-position: -200px;  }
+	td.companymenucell { text-align:right; }
+}
+
+
+ 
+
+#rootsizehelper
+{
+	min-width: 190px;
+}
+
+#productmenu
+{
+	height: auto;
+	padding-bottom: 10px;
+}
+
+#productmenu a
+{
+	line-height: 1.5;
+}
+
+.productmenu_main
+{
+}
+
+#companymenu
+{
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 750px) 
+{
+	#companymenu { font-size: 75%;	 }
+}
+
+#main_text
+{
+	line-height: 1.3;
+	font-size: 10pt; 
+}
+
+.maintextBig
+{
+	font-size: 11pt;  
+	text-align: center;
+	color: #333333;
+}
+
+  
+div.downloadbuttonarea /* make them work in one line next to each other */
+{	
+	display:inline-block; 
+	margin-top:20px; 
+	margin-bottom:20px;
+}
+
+div.downloadbuttonarea a.rocketcakegradient
+{
+	background-image: linear-gradient(to top, #1C0F23, #52425F);
+}
+
+div.featuregifcontainer
+{
+	display: inline-block; 
+	width: 200px; 
+	height: 125px; 
+	overflow:hidden;
+}
+
+div.featuregifcontainer img
+{
+	max-width: 200px;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	/*border-radius: 10px;*/
+}
+
+.maintextleftofnews
+{
+	width:70%; 
+	display: inline-block; 
+	vertical-align:top;
+}
+
+.newssidebar
+{
+	width:25%; 
+	display: inline-block;
+	vertical-align:top; 
+	font-size:12px;
+	margin-right: 20px;	
+}
+
+@media screen and (max-width: 800px) 
+{
+	.newssidebar { display: none; }
+	.maintextleftofnews { width: 100%; }
+}
+
+.featurecontentleft
+{
+	width:55%; 
+	display: inline-block; 
+	vertical-align:top;
+	text-align: left;
+}
+
+.featurecontentright
+{
+	width:40%; 
+	display: inline-block;
+	vertical-align:top; 
+	font-size:12px;
+}
+
+@media screen and (max-width: 800px) 
+{
+	.featurecontentleft { width: 100%; }
+	.featurecontentright { width: 100%; }
+}

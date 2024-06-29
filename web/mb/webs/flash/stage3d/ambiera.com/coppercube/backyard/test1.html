@@ -1,0 +1,156 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head> 
+	
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>  
+			<meta name="robots" content="noarchive" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+		<link rel="stylesheet" href="../style/ambiera2.css" type="text/css"/> 
+		<link rel="stylesheet" href="../style/make_responsive.css" type="text/css"/>   		<title>3D backyard demo with Flash Stage3D / Molehill created in CopperCube</title>
+
+</head>
+
+
+<body>
+<div id="rootcenterhelper" align="center" >
+<div id="rootsizehelper" >
+<table class="maintable" cellspacing="0" cellpadding="0" >
+  <tr> 
+    <td class="shadowleft" rowspan="4"></td>
+    <td class="topmenu forcesmall" colspan="3">
+		<table>
+		    <tr>
+		     <td width="150px" class="topdecorationcell forcesmall" >
+				<a href="../index.html"><img style="border:0" src="../style/spacer.gif" width="140" height="70" alt="ambiera home"/></a>
+			  </td>
+		      <td class="topdecorationcell forcesmall">
+				<a href="../index.html">
+					<img style="border:0" src="../style/spacer.gif" width="140" height="60" alt="ambiera home"/></a>				  
+			  </td>
+			  <td class="companymenucell forcesmall">
+				<div id="companymenu" class="forcesmall"> 
+					<a id="menu_products" class="companymenu_main" href="../index.html">Products</a>
+					<a id="menu_download" class="companymenu_main" href="../index.html">Download</a>
+					<a id="menu_buy"      class="companymenu_main" href="../index.html">Buy</a>
+					<a id="menu_support"  class="companymenu_main" href="../support.html">Support</a>
+					<a id="menu_company"  class="companymenu_main" href="../ambiera.html">Company</a>
+				</div>
+				<script type="text/javascript">
+					createAmbieraRelMenu();
+				</script>
+			  </td>
+		  	</tr>
+		</table>
+	</td>
+    <td class="shadowright" rowspan="4"></td>
+  </tr>
+  <tr>
+	<td>
+		<div style="position:relative; width: 100%; height: 70px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; background: #111111;" align="center" >
+			<div style="position:relative; overflow:hidden; height: 70px;" > 
+				<img style="position:absolute; right:0; bottom:0; margin:0px 0px 0px 0px;" src="images/topimage_big_5.4.jpg" />
+				
+				<h1 class="inimagetitle" style="top:-10px;" >
+					<div class="titlecaption">CopperCube</div>
+				</h1>
+				
+			</div> 
+		</div>
+		
+		<div id="productmenu">
+					<a class="productmenu_main" href="index.html">Home</a>
+					<a class="productmenu_main" href="features.html">Features</a>
+					<a class="productmenu_main" href="changelog.html">News</a>
+					<a class="productmenu_main" href="faq.html">FAQ</a>
+					<a class="productmenu_main" href="games.html">Games</a>
+					<a class="productmenu_main" href="doc/index.html" target="_blank">Tutorials</a>
+					<a class="productmenu_main" href="../forum.php">Forum</a>
+					<a class="productmenu_main" href="../newsletter.php">Newsletter</a>					
+					<a class="productmenu_main" href="buy.html">Buy</a>
+					<a class="productmenu_main" href="download.html">Download</a>					
+		</div>
+	</td>
+  </tr>
+  <tr> 
+  
+    <td class="contentarea" >
+	
+		<a name="about" id="nobackground"></a> 
+		<div id="main_text">
+						
+			<h1>Coppercube Backyard demo - Flash</h1>This demo shows a scene with many textures (>80), character animation and camera flight.<br/><a href="demos.html">More Demos</a> <a href="demo.php?demo=backyard&mode=webgl">WebGL version of this demo</a><br/><br/><div align="center">
+					<div id="flashwarning" style="border: 1px solid #FFD149; background-color:#FFEEB5; width: 80%; padding: 10px 10px 10px 10px; display:none;">
+						WARNING: <b>This demo requires Flash Player 11. You only have Flash Player version <span id="flashversion">8</span>.</b><br/>
+						<a href="http://get.adobe.com/flashplayer/">Get the latest Flash Player version from Adobe</a>.<br/> 
+					</div><br/>
+					<script type="text/javascript" src="swfobject.js"></script>
+					<script type="text/javascript">
+						var playerVersion = swfobject.getFlashPlayerVersion();
+						var playerVersionStr = playerVersion.major + "." + playerVersion.minor + "." + playerVersion.release;
+						if (playerVersion.major < 11)
+						{
+							var warningElem = document.getElementById("flashwarning");
+							if (warningElem)
+								warningElem.style.display = "block";		
+							var versionElem = document.getElementById("flashversion");
+							if (versionElem)
+								versionElem.innerHTML = playerVersionStr;
+						}
+					</script><div align="center" style="width: 800px; height:600px; border:2px solid #666666; background-color:#000000;">
+					<object width="800" height="600">
+						<embed src="backyard.swf" name="coppercube"
+							   type="application/x-shockwave-flash" 
+							   allowscriptaccess="always" 
+							   allowfullscreen="true" 
+							   width="800" 
+							   wmode="direct"
+							   height="600"
+							   flashvars="loadingtext=Loading $PROGRESS$...&loadingcolor=000000"  >
+						</embed>
+					</object></div><br> 
+				  <p><small>(This CopperCube 3D application requires Flash Player 11)</small></p>
+				  <br/><a href="demos.html">More Demos</a> <a href="demo.php?demo=backyard&mode=webgl">WebGL version of this demo</a></div>			
+			
+				</div>
+			<br/>
+		</div>
+		
+
+		<br/>
+		<br/>
+		<br/>
+										
+	</td> <!-- content area -->
+	
+    <td class="adsarea" >
+		<!-- empty here -->
+	</td> <!-- adsarea -->
+	
+  </tr>
+  <tr> 
+    <td class="bottombar" colspan="3">
+		<!-- Piwik -->
+		<script type="text/javascript"> 
+		  var _paq = _paq || [];
+		  _paq.push(['disableCookies']);
+		  _paq.push(['trackPageView']);
+		  _paq.push(['enableLinkTracking']);
+		  (function() {
+			var u=(("https:" == document.location.protocol) ? "https" : "http") + "://www.ambiera.at/piwik//";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', 1]);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+			g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+		  })();
+		</script>
+		<noscript><p><img src="http://www.ambiera.at/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+		<!-- End Piwik Code --> 
+	</td>
+  </tr>
+</table>
+</div> <!-- root1 -->
+</div> <!-- root2 -->
+</body>
+</html>
