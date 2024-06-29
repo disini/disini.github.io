@@ -1,0 +1,209 @@
+{
+    "state": true,
+    "data": [
+        {
+            "product_id": "1386",
+            "product_icon_small": "images/1/icon_small.jpg",
+            "product_icon_big": "images/1/icon_big.jpg",
+            "product_ad_type": "7",
+            "product_name": "博倩叶补水清洁旅行套装",
+            "product_description": "博倩叶补水清洁套装，补水保湿，让肌肤保持靓丽光彩。\n博倩叶靓肤清洁液 44ml：迅速缓解粉刺和肌肤刺激引起的不适在受损肌肤恢复过程中帮助减少色斑痘痕的形成您可以全天在妆前或妆后使用。\n博倩叶靓肤爽肤水 150ml：舒缓抗痘爽肤水，温和修护痘痕痘印，纯化肤色，细化毛孔，不会使肌肤过度干燥多效修护和预防肌肤瑕疵，帮助控制多余油脂，不刺激不干燥。减少肌肤起痘不适的机率，让肌肤重焕光彩。",
+            "product_text": "点击购买",
+            "product_link": "https://www.amazon.com/Boscia-Tsubaki-Cleanse-Hydrate-Limited/dp/B00N156H4E/ref=sr_1_1_s_it?s=beauty&ie=UTF8&qid=1481868901&sr=1-1&keywords=Tsubaki+Cleanse%26Hydrate+Trio",
+            "client_logo": "",
+            "template_img": null,
+            "activity_description": null,
+            "convert_description": null,
+            "end_description": null,
+            "red_packet": null,
+            "vote_problem": null,
+            "product_min_price": "240",
+            "product_max_price": null,
+            "color": "240,110,110",
+            "border": "/htdocs/uploads/product/549b3001b068045a3399be51ee868e84.png",
+            "logo_place": "1",
+            "format": null,
+            "attache": [
+                {
+                    "attache_id": "1399",
+                    "attache_url": "images/1/board1.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1400",
+                    "attache_url": "images/1/board2.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1401",
+                    "attache_url": "images/1/board3.jpg",
+                    "vote_options": null
+                }
+            ],
+            "point_name": "博倩叶补水清洁旅行套装",
+            "start_time": "283.28",
+            "time": "5.0",
+            "x": "37.55",
+            "y": "33.84",
+            "drama_id": "57",
+            "effect": "1",
+            "shape": "1",
+            "subtitles_img": null,
+            "mon_code": [],
+            "point_id": "425"
+        },
+	{
+            "product_id": "1386",
+            "product_icon_small": "images/3/icon_small.jpg",
+            "product_icon_big": "images/3/icon_big.jpg",
+            "product_ad_type": "7",
+            "product_name": "NARS圣诞限量五色腮红",
+            "product_description": "NARS最经典、用色最大胆的产品！完全展露都会时尚女性前卫、摩登、勇于追求自我的最完美腮红！想要最自然、最健康的好脸色吗？渴望和其它人与众不同吗？NARS腮红是你不能错过的最佳选择！质地非常细致，擦上之后脸色可以拥有意想不到的好效果！特殊质感的透明成分轻薄不厚重，妆感最自然！让你的脸色展现最佳的完美气色！以独特方法让自然光线在脸部呈现色彩，带有独特的粉红色光底，上色之后展现含蓄的金色光亮、不会夸张也不会突兀，完全贴合的苹果光亮彩般的自然色调，就像从皮肤底层轻透出来的完美肤色。即便是初学者都可以画出完美自然的光感彩妆、让脸部更立体、带有点橘红、又不会红得太夸张，闪亮透明又带有细致润泽的光采，其最大特色更可以搭配各种不同颜色的眼影、口红等等，都可以轻易画出一个漂亮自然的妆感，可以说是最佳选择的「万用腮红」。",
+            "product_text": "点击购买",
+            "product_link": "http://item.jd.hk/1973389275.html?jd_pop=31a6017b-f3e1-4094-9900-e1521a9038e5",
+            "client_logo": "",
+            "template_img": null,
+            "activity_description": null,
+            "convert_description": null,
+            "end_description": null,
+            "red_packet": null,
+            "vote_problem": null,
+            "product_min_price": "540",
+            "product_max_price": null,
+            "color": "240,110,110",
+            "border": "/htdocs/uploads/product/549b3001b068045a3399be51ee868e84.png",
+            "logo_place": "1",
+            "format": null,
+            "attache": [
+                {
+                    "attache_id": "1399",
+                    "attache_url": "images/3/board1.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1400",
+                    "attache_url": "images/3/board2.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1401",
+                    "attache_url": "images/3/board3.jpg",
+                    "vote_options": null
+                }
+            ],
+            "point_name": "NARS圣诞限量五色腮红",
+            "start_time": "283.28",
+            "time": "5.0",
+            "x": "37.55",
+            "y": "33.84",
+            "drama_id": "57",
+            "effect": "1",
+            "shape": "1",
+            "subtitles_img": null,
+            "mon_code": [],
+            "point_id": "425"
+        },
+        {
+            "product_id": "1386",
+            "product_icon_small": "images/2/icon_small.jpg",
+            "product_icon_big": "images/2/icon_big.jpg",
+            "product_ad_type": "7",
+            "product_name": "欧缇丽精华液保湿套装",
+            "product_description": "欧缇丽臻美亮白精华液 30ml: 蕴含欧缇丽专利成分葡萄蔓威尼菲霖，（专利号：WO 2004/006881 A2,专利注册国：法国,国际专利分类号7：A61K 7/48)无光敏感，可提亮肤色，淡化已有色斑，减少黑色素再生，肤色更均匀、透亮、白皙且滋润有光泽。\n 欧缇丽葡萄精华爽肤水30ml：融合了精华油和爽肤水的特性，蕴含葡萄萃取物、橙花水、有机薄荷叶及薄荷精油等有效草本成分。只需在疲倦黯哑的肌肤上轻轻一喷，醒肤、控油、定妆、细致毛孔、提亮肤色一步完成。同时拥有令人迷恋的独特草本清新香气。",
+            "product_text": "点击购买",
+            "product_link": "http://www.sephora.cn/product/685534.html",
+            "client_logo": "",
+            "template_img": null,
+            "activity_description": null,
+            "convert_description": null,
+            "end_description": null,
+            "red_packet": null,
+            "vote_problem": null,
+            "product_min_price": "510",
+            "product_max_price": null,
+            "color": "240,110,110",
+            "border": "/htdocs/uploads/product/549b3001b068045a3399be51ee868e84.png",
+            "logo_place": "1",
+            "format": null,
+            "attache": [
+                {
+                    "attache_id": "1399",
+                    "attache_url": "images/2/board1.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1400",
+                    "attache_url": "images/2/board2.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1401",
+                    "attache_url": "images/2/board3.jpg",
+                    "vote_options": null
+                }
+            ],
+            "point_name": "欧缇丽精华液保湿套装",
+            "start_time": "283.28",
+            "time": "5.0",
+            "x": "37.55",
+            "y": "33.84",
+            "drama_id": "57",
+            "effect": "1",
+            "shape": "1",
+            "subtitles_img": null,
+            "mon_code": [],
+            "point_id": "425"
+        }, 
+        {
+            "product_id": "1395",
+            "product_icon_small": "images/4/icon_small.jpg",
+            "product_icon_big": "images/4/icon_big.jpg",
+            "product_ad_type": "7",
+            "product_name": "丝芙兰全明星套装",
+            "product_description": "特润修护肌透精华露：前沿革新修护科技显著淡化各种时光印记，对抗肌肤隐形损伤，帮助肌肤加强自我修护能力\n肌透修护眼部精华露：保湿滋润，有效淡化脆弱眼周各类可见的岁月痕迹-细纹、皱纹、黑眼圈、干燥、黯沉等，促进夜间眼周自我修护。抵御外界各类缓解侵害\n肌初赋活原生液：还原肌底原生力，修护肌底微损伤、加乘肌底吸收力\n多效智妍眼霜：全新多效智妍眼霜，更创世注入三维因子，眼部连锁问题，一瓶多效解决——深度滋养、改善眼纹、淡黑眼圈…… 娇嫩眼周，青春全盛，神采熠熠！\n多效智妍面霜：周复一周，日渐绽放年轻：干燥、细纹、皱纹、松弛、暗沉…连锁问题逐个迎刃而解，水润、光洁、弹力、光采，全胜年轻跃然眼前！",
+            "product_text": "点击购买",
+            "product_link": "https://www.amazon.com/Sephora-Favorites-Superstars-225-value/dp/B00PFAMJJ0/ref=pd_rhf_se_p_img_1?_encoding=UTF8&psc=1&refRID=Y0K16SRK670HYSR45CQC",
+            "client_logo": "/htdocs/uploads/product/b23596568b999fec74c52dc1eb8f71dd.png",
+            "template_img": null,
+            "activity_description": null,
+            "convert_description": null,
+            "end_description": null,
+            "red_packet": null,
+            "vote_problem": null,
+            "product_min_price": "14.9",
+            "product_max_price": null,
+            "color": "21,169,233",
+            "border": null,
+            "logo_place": "1",
+            "format": null,
+            "attache": [
+                {
+                    "attache_id": "1440",
+                    "attache_url": "images/4/board1.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1440",
+                    "attache_url": "images/4/board2.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1440",
+                    "attache_url": "images/4/board3.jpg",
+                    "vote_options": null
+                }
+            ],
+            "point_name": "丝芙兰全明星套装",
+            "start_time": "232.6",
+            "time": "5.0",
+            "x": "37.98",
+            "y": "35.92",
+            "drama_id": "57",
+            "effect": null,
+            "shape": null,
+            "subtitles_img": "/htdocs/uploads/subtitles/4b4ee43b13b4ef0f00bc055cea8003d8.png",
+            "mon_code": [],
+            "point_id": "450"
+        }
+    ]
+}

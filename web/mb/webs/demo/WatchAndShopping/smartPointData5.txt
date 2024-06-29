@@ -1,0 +1,280 @@
+﻿{
+    "state": true,
+    "data": [
+        {
+            "product_id": "1",
+            "product_icon_small": "images/1/icon_small.jpg",
+			"product_icon_middle": "images/1/icon_middle.jpg",
+            "product_icon_big": "images/1/icon_big.jpg",
+			"platform_icon": "images/1/platform_icon.png",
+			"icon_type": "2",
+			"panel_type": "2",
+            "product_ad_type": "7",
+            "product_name": "自由调节拉杆行李箱",
+            "product_description": "MUJI 可自由调节拉杆高度带轮锁硬壳行李箱（102L）\n产地：中国上海市\n商品材质：ABS树脂30% 里料: 聚酯纤维100%\n可选颜色：红色、深蓝、黑色、米色",
+            "product_text": "点击购买",
+            "product_link": "https://detail.tmall.com/item.htm?spm=a1z10.5-b-s.w4011-14901318931.128.N6TMeE&id=528699265109&rn=5bdb7ba8eaa8056015a5f20f9fed7bbc&abbucket=1&skuId=3147744050617",
+            "client_logo": "",
+            "template_img": null,
+            "activity_description": null,
+            "convert_description": null,
+            "end_description": null,
+            "red_packet": null,
+            "vote_problem": null,
+            "product_min_price": "￥988",
+            "product_max_price": null,
+            "color": "240,110,110",
+            "border": "/htdocs/uploads/product/549b3001b068045a3399be51ee868e84.png",
+            "logo_place": "1",
+            "format": null,
+            "attache": [
+                {
+                    "attache_id": "1399",
+                    "attache_url": "images/1/board1.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1400",
+                    "attache_url": "images/1/board2.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1401",
+                    "attache_url": "images/1/board3.jpg",
+                    "vote_options": null
+                }
+            ],
+            "point_name": "自由调节拉杆行李箱",
+			"point_description": "MUJI 可自由调节拉杆高度带轮锁硬壳拉杆箱",
+            "start_time": "4.94",
+            "time": "3.04",			
+			"locXY":["775|489"],
+            "drama_id": "57",
+            "effect": "1",
+            "shape": "1",
+            "subtitles_img": null,
+            "mon_code": [],
+            "point_id": "425"
+        },
+	{
+            "product_id": "2",
+            "product_icon_small": "images/2/icon_small.jpg",
+			"product_icon_middle": "images/2/icon_middle.jpg",
+            "product_icon_big": "images/2/icon_big.jpg",
+			"platform_icon": "images/2/platform_icon.png",
+			"icon_type": "3",
+			"panel_type": "3",
+            "product_ad_type": "7",
+            "product_name": "MUJI旅行U型枕",
+            "product_description": "无印良品MUJI旅行枕U型护腰枕日版黑色滑款范玮琪款。\n每个颈部靠枕约5000000个微粒。\n自由度高，圆滑弧线，适合各种场景使用，贴心确保你的舒适旅行。\n100%天竺棉\n尺寸：16.5*67cm",
+            "product_text": "点击购买",
+            "product_link": "https://item.jd.hk/1958944454.html",
+            "client_logo": "",
+            "template_img": null,
+            "activity_description": null,
+            "convert_description": null,
+            "end_description": null,
+            "red_packet": null,
+            "vote_problem": null,
+            "product_min_price": "￥149",
+            "product_max_price": null,
+            "color": "240,110,110",
+            "border": "/htdocs/uploads/product/549b3001b068045a3399be51ee868e84.png",
+            "logo_place": "1",
+            "format": null,
+            "attache": [
+                {
+                    "attache_id": "1399",
+                    "attache_url": "images/2/board1.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1400",
+                    "attache_url": "images/2/board2.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1401",
+                    "attache_url": "images/2/board3.jpg",
+                    "vote_options": null
+                }
+            ],
+            "point_name": "MUJI旅行U型枕",
+			"point_description": "无印良品MUJI旅行枕U型护腰枕",
+            "start_time": "11.22",
+            "time": "7.08",            
+			"locXY":["835|119"],
+            "drama_id": "57",
+            "effect": "1",
+            "shape": "1",
+            "subtitles_img": null,
+            "mon_code": [],
+            "point_id": "425"
+        },
+        {
+            "product_id": "3",
+            "product_icon_small": "images/3/icon_small.jpg",
+			"product_icon_middle": "images/3/icon_middle.jpg",
+            "product_icon_big": "images/3/icon_big.jpg",
+			"platform_icon": "images/3/platform_icon.png",
+            "product_ad_type": "7",
+			"icon_type": "1",
+			"panel_type": "1",
+            "product_name": "再生纸护照记事本",
+            "product_description": "产地：日本\n材质：再生纸70%\n规格：约125x88mm/24页\n描述：类似护照大小的再生纸记事本，适合随身携带。\n推荐：护照大小随身记事本，大小厚薄适中，封面素雅而与众不同。",
+            "product_text": "点击购买",
+            "product_link": "http://www.muji.com.cn/cn/store/goods/4547315005031",
+            "client_logo": "",
+            "template_img": null,
+            "activity_description": null,
+            "convert_description": null,
+            "end_description": null,
+            "red_packet": null,
+            "vote_problem": null,
+            "product_min_price": "￥7.00",
+            "product_max_price": null,
+            "color": "240,110,110",
+            "border": "/htdocs/uploads/product/549b3001b068045a3399be51ee868e84.png",
+            "logo_place": "1",
+            "format": null,
+            "attache": [
+                {
+                    "attache_id": "1399",
+                    "attache_url": "images/3/board1.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1400",
+                    "attache_url": "images/3/board2.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1401",
+                    "attache_url": "images/3/board3.jpg",
+                    "vote_options": null
+                }
+            ],
+            "point_name": "再生纸护照记事本",
+			"point_description": "再生纸护照记事本",
+            "start_time": "21.74",
+            "time": "6.88",            
+			"locXY":["821|178"],
+            "drama_id": "57",
+            "effect": "1",
+            "shape": "1",
+            "subtitles_img": null,
+            "mon_code": [],
+            "point_id": "425"
+        }, 
+        {
+            "product_id": "4",
+            "product_icon_small": "images/4/icon_small.jpg",
+			"product_icon_middle": "images/4/icon_middle.jpg",
+            "product_icon_big": "images/4/icon_big.jpg",
+			"platform_icon": "images/4/platform_icon.png",
+            "product_ad_type": "7",
+			"icon_type": "2",
+			"panel_type": "2",
+            "product_name": "便携式无线LED灯",
+            "product_description": "便携式衣架状的通用型设计。可挂在各种场所使用。\n材质：聚碳酸酯/ABS树脂/铝合金\n电源设备：USB/锂电池3.7V 550MAH\n充电时间：约６小时",
+            "product_text": "点击购买",
+            "product_link": "https://www.amazon.com/portable-cordless-light-MJDLL-1-travel/dp/B01DJ1AZRE",
+            "client_logo": "/htdocs/uploads/product/b23596568b999fec74c52dc1eb8f71dd.png",
+            "template_img": null,
+            "activity_description": null,
+            "convert_description": null,
+            "end_description": null,
+            "red_packet": null,
+            "vote_problem": null,
+            "product_min_price": "$75.8",
+            "product_max_price": null,
+            "color": "21,169,233",
+            "border": null,
+            "logo_place": "1",
+            "format": null,
+            "attache": [
+                {
+                    "attache_id": "1440",
+                    "attache_url": "images/4/board1.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1440",
+                    "attache_url": "images/4/board2.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1440",
+                    "attache_url": "images/4/board3.jpg",
+                    "vote_options": null
+                }
+            ],
+            "point_name": "便携式无线LED灯",
+			"point_description": "便携式无线LED灯",
+            "start_time": "30.24",
+            "time": "5.80", 
+			"locXY":["633|385"],
+            "drama_id": "57",
+            "effect": null,
+            "shape": null,
+            "subtitles_img": "/htdocs/uploads/subtitles/4b4ee43b13b4ef0f00bc055cea8003d8.png",
+            "mon_code": [],
+            "point_id": "450"
+        },
+		{
+            "product_id": "5",
+            "product_icon_small": "images/5/icon_small.jpg",
+			"product_icon_middle": "images/5/icon_middle.jpg",
+            "product_icon_big": "images/5/icon_big.jpg",
+			"platform_icon": "images/5/platform_icon.png",
+			"icon_type": "3",
+			"panel_type": "3",
+            "product_ad_type": "7",
+            "product_name": "亚麻可折叠宽边帽",
+            "product_description": "特价商品\n可折叠的式样\n加入了UV遮蔽衬垫,用带有清凉感的麻制作而成的帽子\n商品材质：亚麻100%\n尺寸：56~57.5cm",
+            "product_text": "点击购买",
+            "product_link": "http://www.muji.com.cn/cn/store/goods/4934761977225",
+            "client_logo": "",
+            "template_img": null,
+            "activity_description": null,
+            "convert_description": null,
+            "end_description": null,
+            "red_packet": null,
+            "vote_problem": null,
+            "product_min_price": "￥139",
+            "product_max_price": null,
+            "color": "240,110,110",
+            "border": "/htdocs/uploads/product/549b3001b068045a3399be51ee868e84.png",
+            "logo_place": "1",
+            "format": null,
+            "attache": [
+                {
+                    "attache_id": "1399",
+                    "attache_url": "images/5/board1.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1400",
+                    "attache_url": "images/5/board2.jpg",
+                    "vote_options": null
+                },
+                {
+                    "attache_id": "1401",
+                    "attache_url": "images/5/board3.jpg",
+                    "vote_options": null
+                }
+            ],
+            "point_name": "亚麻可折叠宽边帽",
+			"point_description": "亚麻可折叠宽边帽",
+            "start_time": "40.18",
+            "time": "4.72", 
+			"locXY":["692|280"],
+            "drama_id": "57",
+            "effect": "1",
+            "shape": "1",
+            "subtitles_img": null,
+            "mon_code": [],
+            "point_id": "425"
+        }
+    ]
+}
