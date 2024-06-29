@@ -1,0 +1,84 @@
+{
+    "list": [
+        {
+            "index": "0", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/0.jpg"
+        }, 
+        {
+            "index": "1", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/1.jpg"
+        }, 
+        {
+            "index": "2", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/2.jpg"
+        }, 
+        {
+            "index": "3", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/3.jpg"
+        }, 
+        {
+            "index": "4", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/4.jpg"
+        }, 
+        {
+            "index": "5", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/5.jpg"
+        }, 
+        {
+            "index": "6", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/6.jpg"
+        }, 
+        {
+            "index": "7", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/7.jpg"
+        }, 
+        {
+            "index": "8", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/8.jpg"
+        }, 
+        {
+            "index": "9", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/9.jpg"
+        }, 
+        {
+            "index": "10", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/10.jpg"
+        }, 
+        {
+            "index": "11", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/11.jpg"
+        }, 
+        {
+            "index": "12", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/12.jpg"
+        }, 
+        {
+            "index": "13", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/13.jpg"
+        }, 
+        {
+            "index": "14", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/14.jpg"
+        }, 
+        {
+            "index": "15", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/15.jpg"
+        }, 
+        {
+            "index": "16", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/16.jpg"
+        }, 
+        {
+            "index": "17", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/17.jpg"
+        }, 
+        {
+            "index": "18", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/18.jpg"
+        }, 
+        {
+            "index": "19", 
+            "url": "http://testopen.videoyi.com/webs/pics/AnnualLottery/images/19.jpg"
+        }
+    ]
+}
