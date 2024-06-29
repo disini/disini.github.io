@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>OpenGL ES Demo 3 -- Dynamic Inputing 3D Text</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				color: #fff;
+				font-family:Monospace;
+				font-size:13px;
+				text-align:center;
+
+				background-color: #000;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			#info {
+				position: absolute;
+				top: 0px; width: 100%;
+				padding: 5px;
+			}
+		</style>
+	</head>
+<body>
+	<div class="lesson-title">
+		<h1>OpenGL ES 动态文本实时渲染演示实例，键盘输入文字，退格键删除</h1>
+	</div>
+    <!--<div id="player" />-->
+    <!--<div id="videoDiv" />-->
+    <!--<video id="player1" src="sourceLocation" controls width="400px" heigt="400px"></video>-->
+    <!--<video id="player1" src="http://localhost:9200/video/jbx.mp4" controls width="400px" heigt="400px"></video>-->
+    <!--<video id="player1" src="video/jbx.mp4" controls width="400px" heigt="400px"></video>-->
+    <div id="container" style="position: relative;">
+
+		<!--<div style="position: absolute;">
+        	<video style="position: relative;  object-fit: fill;" id="player1" src="video/jbx.mp4" controls="true" autoplay="true" width="800px" heigt="450px"></video>
+		</div>-->
+        <!--<canvas id="canvas1" width="800" height="600"></canvas>-->
+    <!--</div>-->
+        <!--<canvas id="canvas1" width="1600" height="900" style="position: absolute;z-index: 100;top: 0;left: 0;"></canvas>-->
+        <!--<canvas id="canvas1" width="1600" height="900" style="position: absolute;z-index: 100;top: 100px;left: 100px;"></canvas>-->
+        <!--<canvas id="canvas1" width="1600" height="900" style="position: absolute;z-index: 100;top: 0px;left: 0px;"></canvas>-->
+        <div id="canvas1" width="1600" height="900" style="position: absolute;z-index: 100;top: 0px;left: 0px;"></div>
+    </div>
+    <!--<canvas id="canvas1" width="1600" height="900" style="position: absolute;z-index: 100;top: 0;left: 0;"></canvas>-->
+
+</body>
+		<!--<script src="js/three.js"></script>-->
+		<!--<script src="js/three/three.js"></script>-->
+		<script src="js/three/three.min.js"></script>
+		<script src="js/controls/OrbitControls.js"></script>
+
+		<script src="js/Detector.js"></script>
+		<script src="js/libs/stats.min.js"></script>
+		<!--<script src="js/GeometryText1.js"	></script>-->
+		<script src="js/GeometryText.js"	></script>
+
+
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="1-15091G04123.jpg" type="image/x-icon">
+
+<title>直播演示4</title>
+<style>
+.a {width:800px;float:left;}
+.b {width:640px;float:right;}
+.main {width:1500px;position:absolute;left:50%;top:50%;height:540px;margin-top:-270px;margin-left:-640px;}
+</style>
+</head>
+
+<body>
+<div class="main">
+<div class="a">
+<object id="player_api" width="800" height="600" type="application/x-shockwave-flash" data="LiveVideoAdEditor.swf" name="LiveStreamingLeft" >
+<param value="true" name="allowfullscreen">
+<param value="always" name="allowscriptaccess">
+<param value="high" name="quality">
+<param value="true" name="cachebusting">
+<param value="opaque" name="wmode">
+<param value="urlPrefix=http://testopen.videoyi.com/webs/demo/zhibodemo/&videoUrl=shoppingLive_640x360.flv" name="flashvars">
+</object>
+</div>
+<div class="b">
+<object id="player_api" width="640" height="360" type="application/x-shockwave-flash" data="audiencePlayer.swf" name="audiencePlayer" >
+<param value="true" name="allowfullscreen">
+<param value="always" name="allowscriptaccess">
+<param value="high" name="quality">
+<param value="true" name="cachebusting">
+<param value="opaque" name="wmode">
+<param value="urlPrefix=http://testopen.videoyi.com/webs/demo/zhibodemo/&videoUrl=shoppingLive_640x360.flv" name="flashvars">
+</object>
+</div>
+</div>
+</body>
+</html>

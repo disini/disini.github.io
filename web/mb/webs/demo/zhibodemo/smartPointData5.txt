@@ -1,0 +1,210 @@
+{
+    "state": true, 
+    "data": [
+        {
+            "product_id": "1386", 
+            "product_icon_small": "/images/1/icon_small.jpg", 
+            "product_icon_big": "/images/1/icon_big.jpg", 
+            "product_ad_type": "7", 
+            "product_name": "圣罗兰口红", 
+            "product_description": "<p>       “红色是一种宣言，是存在的证明，是女性气质充满张力的演绎。”圣罗兰纯口红，真正为优雅美丽高级定制的口红！融合纯正色彩、耀眼光泽和滋润质地于一身，赋予双唇丝缎般细腻与浓郁的色泽质感。金色方管高定设计，如珠宝般纯粹高贵。无论是身穿优雅晚装或时尚便服，圣罗兰纯口红都能搭配不同形象，成为隐藏于手袋内的一个美妆法宝。</p><p><br></p>", 
+            "product_text": "我也要定制口红", 
+            "product_link": "http://www.yslbeautycn.com/product/00030YSL.html?dwvar_00030YSL_color=RPC01", 
+            "client_logo": "", 
+            "template_img": null, 
+            "activity_description": null, 
+            "convert_description": null, 
+            "end_description": null, 
+            "red_packet": null, 
+            "vote_problem": null, 
+            "product_min_price": "320", 
+            "product_max_price": null, 
+            "color": "240,110,110", 
+            "border": "/htdocs/uploads/product/549b3001b068045a3399be51ee868e84.png", 
+            "logo_place": "1", 
+            "format": null, 
+            "attache": [
+                {
+                    "attache_id": "1399", 
+                    "attache_url": "/images/1/board1.jpg", 
+                    "vote_options": null
+                }, 
+                {
+                    "attache_id": "1400", 
+                    "attache_url": "/images/1/board2.jpg",  
+                    "vote_options": null
+                }, 
+                {
+                    "attache_id": "1401", 
+                    "attache_url": "/images/1/board3.jpg", 
+                    "vote_options": null
+                }
+            ], 
+            "point_name": "魅蓝note3", 
+            "start_time": "283.28", 
+            "time": "5.0", 
+            "x": "37.55", 
+            "y": "33.84", 
+            "drama_id": "57", 
+            "effect": "1", 
+            "shape": "1", 
+            "subtitles_img": null, 
+            "mon_code": [ ], 
+            "point_id": "425"
+        },
+		{
+            "product_id": "1386", 
+            "product_icon_small": "/htdocs/uploads/product/d5f07ecb92b63801d97d7fc5fb844eed.png", 
+            "product_icon_big": "/htdocs/uploads/product/03870af7da536be818aeb2cb7ae27fb2.png", 
+            "product_ad_type": "7", 
+            "product_name": "圣罗兰口红", 
+            "product_description": "<p>       “红色是一种宣言，是存在的证明，是女性气质充满张力的演绎。”圣罗兰纯口红，真正为优雅美丽高级定制的口红！融合纯正色彩、耀眼光泽和滋润质地于一身，赋予双唇丝缎般细腻与浓郁的色泽质感。金色方管高定设计，如珠宝般纯粹高贵。无论是身穿优雅晚装或时尚便服，圣罗兰纯口红都能搭配不同形象，成为隐藏于手袋内的一个美妆法宝。</p><p><br></p>", 
+            "product_text": "我也要定制口红", 
+            "product_link": "http://www.yslbeautycn.com/product/00030YSL.html?dwvar_00030YSL_color=RPC01", 
+            "client_logo": "", 
+            "template_img": null, 
+            "activity_description": null, 
+            "convert_description": null, 
+            "end_description": null, 
+            "red_packet": null, 
+            "vote_problem": null, 
+            "product_min_price": "320", 
+            "product_max_price": null, 
+            "color": "240,110,110", 
+            "border": "/htdocs/uploads/product/549b3001b068045a3399be51ee868e84.png", 
+            "logo_place": "1", 
+            "format": null, 
+            "attache": [
+                {
+                    "attache_id": "1399", 
+                    "attache_url": "/htdocs/uploads/product/7658145364eb010541955527f3e62534.png", 
+                    "vote_options": null
+                }, 
+                {
+                    "attache_id": "1400", 
+                    "attache_url": "/htdocs/uploads/product/dd4e58fe49b25566365858f3a8ed5b49.png", 
+                    "vote_options": null
+                }, 
+                {
+                    "attache_id": "1401", 
+                    "attache_url": "/htdocs/uploads/product/5cf679611bca9af4a18b5da586b7c4d6.png", 
+                    "vote_options": null
+                }
+            ], 
+            "point_name": "魅蓝note3", 
+            "start_time": "283.28", 
+            "time": "5.0", 
+            "x": "37.55", 
+            "y": "33.84", 
+            "drama_id": "57", 
+            "effect": "1", 
+            "shape": "1", 
+            "subtitles_img": null, 
+            "mon_code": [ ], 
+            "point_id": "425"
+        },
+		{
+            "product_id": "1386", 
+            "product_icon_small": "/htdocs/uploads/product/d5f07ecb92b63801d97d7fc5fb844eed.png", 
+            "product_icon_big": "/htdocs/uploads/product/03870af7da536be818aeb2cb7ae27fb2.png", 
+            "product_ad_type": "7", 
+            "product_name": "圣罗兰口红", 
+            "product_description": "<p>       “红色是一种宣言，是存在的证明，是女性气质充满张力的演绎。”圣罗兰纯口红，真正为优雅美丽高级定制的口红！融合纯正色彩、耀眼光泽和滋润质地于一身，赋予双唇丝缎般细腻与浓郁的色泽质感。金色方管高定设计，如珠宝般纯粹高贵。无论是身穿优雅晚装或时尚便服，圣罗兰纯口红都能搭配不同形象，成为隐藏于手袋内的一个美妆法宝。</p><p><br></p>", 
+            "product_text": "我也要定制口红", 
+            "product_link": "http://www.yslbeautycn.com/product/00030YSL.html?dwvar_00030YSL_color=RPC01", 
+            "client_logo": "", 
+            "template_img": null, 
+            "activity_description": null, 
+            "convert_description": null, 
+            "end_description": null, 
+            "red_packet": null, 
+            "vote_problem": null, 
+            "product_min_price": "320", 
+            "product_max_price": null, 
+            "color": "240,110,110", 
+            "border": "/htdocs/uploads/product/549b3001b068045a3399be51ee868e84.png", 
+            "logo_place": "1", 
+            "format": null, 
+            "attache": [
+                {
+                    "attache_id": "1399", 
+                    "attache_url": "/htdocs/uploads/product/7658145364eb010541955527f3e62534.png", 
+                    "vote_options": null
+                }, 
+                {
+                    "attache_id": "1400", 
+                    "attache_url": "/htdocs/uploads/product/dd4e58fe49b25566365858f3a8ed5b49.png", 
+                    "vote_options": null
+                }, 
+                {
+                    "attache_id": "1401", 
+                    "attache_url": "/htdocs/uploads/product/5cf679611bca9af4a18b5da586b7c4d6.png", 
+                    "vote_options": null
+                }
+            ], 
+            "point_name": "魅蓝note3", 
+            "start_time": "283.28", 
+            "time": "5.0", 
+            "x": "37.55", 
+            "y": "33.84", 
+            "drama_id": "57", 
+            "effect": "1", 
+            "shape": "1", 
+            "subtitles_img": null, 
+            "mon_code": [ ], 
+            "point_id": "425"
+        },
+        {
+            "product_id": "1395", 
+            "product_icon_small": "/htdocs/images/video_images/video_gw.png", 
+            "product_icon_big": "/htdocs/uploads/product/03870af7da536be818aeb2cb7ae27fb2.png", 
+            "product_ad_type": "7", 
+            "product_name": "佳洁士炫白能量", 
+            "product_description": "<p>品牌：佳洁士</p><p>分类：牙膏</p><p>毛重：210.00g</p><p>净含量：141g-200g</p><p>产地：广州/天津</p><p>保质期：2年</p><p>功效：亮白</p><p>适用人群：普通人群</p><p><br></p>", 
+            "product_text": "上京东购买！", 
+            "product_link": "http://item.jd.com/844999.html", 
+            "client_logo": "/htdocs/uploads/product/b23596568b999fec74c52dc1eb8f71dd.png", 
+            "template_img": null, 
+            "activity_description": null, 
+            "convert_description": null, 
+            "end_description": null, 
+            "red_packet": null, 
+            "vote_problem": null, 
+            "product_min_price": "14.9", 
+            "product_max_price": null, 
+            "color": "21,169,233", 
+            "border": null, 
+            "logo_place": "1", 
+            "format": null, 
+            "attache": [
+                {
+                    "attache_id": "1440", 
+                    "attache_url": "/htdocs/uploads/product/2da46a3b78c433921ba1fef391453b74.png", 
+                    "vote_options": null
+                }, 
+                {
+                    "attache_id": "1440", 
+                    "attache_url": "/htdocs/uploads/product/2da46a3b78c433921ba1fef391453b74.png", 
+                    "vote_options": null
+                }, 
+                {
+                    "attache_id": "1440", 
+                    "attache_url": "/htdocs/uploads/product/2da46a3b78c433921ba1fef391453b74.png", 
+                    "vote_options": null
+                }
+            ], 
+            "point_name": null, 
+            "start_time": "232.6", 
+            "time": "5.0", 
+            "x": "37.98", 
+            "y": "35.92", 
+            "drama_id": "57", 
+            "effect": null, 
+            "shape": null, 
+            "subtitles_img": "/htdocs/uploads/subtitles/4b4ee43b13b4ef0f00bc055cea8003d8.png", 
+            "mon_code": [ ], 
+            "point_id": "450"
+        }
+    ]
+}
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Webgl - Magic Cubes</title>
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        /*#c1 {*/
+        /*position: absolute;*/
+        /*top: 150px;*/
+        /*left: 50px;*/
+        /*}*/
+
+        /*#c2 {*/
+        /*position: absolute;*/
+        /*top: 150px;*/
+        /*left: 900px;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<!--<div class="description">-->
+<!--Webgl - Magic Cubes<br/>-->
+<!--</div>-->
+<div class="lesson-title">
+    <h1>OpenGL ES 场景3D结构信息还原演示示例</h1>
+</div>
+<div id="container">
+    <div id="c1">
+        <canvas id="scene1" width="533" height="300"></canvas>
+    </div>
+    <!--<script>-->
+    <!--scene.style.left=0;-->
+    <!--scene.style.top=0;-->
+    <!--// can.width=200;-->
+    <!--// can.height=200;-->
+    <!--</script>-->
+    <div id="c2" style="position: relative; width:533px; height: 300px">
+        <!--<video id="video1" src="static/js/1.mp4"-->
+        <video id="video1" src="static/video/t3_1.mp4"
+               style="position: absolute; width:533px; height: 300px; top: 0; left: 0;"></video>
+        <canvas id="boujouScene1" width="533" height="300"
+                style="position: absolute; background: rgba(0,0,0,0); top:0; left: 0"></canvas>
+    </div>
+    <button id="player">播放</button>
+
+    <!--<script>-->
+    <!--boujouScene.style.left=0;-->
+    <!--boujouScene.style.top=0;-->
+    <!--// can.width=200;-->
+    <!--// can.height=200;-->
+    <!--</script>-->
+</div>
+
+
+</body>
+<script src="static/js/jquery-3.2.1.min.js"></script>
+<script src="static/js/webgl-utils.js"></script>
+<script src="static/js/3d-math.js"></script>
+<script src="static/js/primitives.js"></script>
+<script src="static/js/three.js"></script>
+<script src="static/js/OBJLoader.js"></script>
+<!--<script src="src_files/webgl-lessons-helper.js"></script> &lt;!&ndash; you can and should delete this script. it is only used on the site to help with errors &ndash;&gt;-->
+<!--<script src="src_files/m4.js"></script>-->
+<!--<script src="src_files/same-code-02_me.js"></script>-->
+<!--<script src="src_files/same-code-02_me.2.js"></script>-->
+<!--<script src="src_files/same-code-02_me.3.js"></script>-->
+<!--<script src="static/js/HelloBoujou2_0.js"></script>-->
+<!--<script src="static/js/HelloBoujou5.js"></script>-->
+<script src="static/js/HelloBoujou5_1.js"></script>
+<!--<script src="static/js/HelloBoujou2_1.js"></script>-->
+<!--<script src="static/js/HelloBoujou3.js"></script>-->
+<script>
+
+
+    var canvas1 = document.getElementById('scene1');
+    var canvas2 = document.getElementById('boujouScene1');
+
+    var boujouInit = boujouInit1(canvas1, canvas2);
+    var getData = $.get('static/js/res.txt');
+    // var getData = $.get('static/js/result2.txt');
+
+    var needUpdate = true;
+
+    var frameIndex = 1;
+
+    function resetFrameIndex() {
+        // frameIndex = 1;
+
+        needUpdate = false;
+        // setTimeout(function(){
+        //     frameIndex = 1;
+        // }, 1000);
+        // $('#video1')[0].play();
+    }
+
+
+    $('#player').on('click', function () {
+        $('#video1')[0].play();
+        // frameIndex = 1;
+        frameIndex = -6;
+        needUpdate = true;
+        Promise.all([getData, boujouInit])
+            .then(function (data) {
+
+                // console.log('model', model)
+                // console.log('data', data);
+                onGotBoujouData(data[0]);
+                onCameraModelLoaded(data[1]);
+                // var frameIndex = 1;
+                setInterval(function () {
+                    renderBoujou(frameIndex);
+                    if(needUpdate)
+                    {
+                        frameIndex++;
+                    }
+                }, 42);
+
+            });
+
+    });
+</script>
+
+
+<!--<script src="src_files/same-code-02_me.4.js"></script>-->
+</html>
